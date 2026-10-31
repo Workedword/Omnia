@@ -1,0 +1,52 @@
+name: Submit a community add-on
+description: Propose a catalog, collection, subtitle add-on, or provider for the Omnia directory.
+title: "[Add-on] "
+body:
+  - type: markdown
+    attributes:
+      value: "Submissions are public and reviewed before listing. Never include passwords, API keys, personal manifest URLs, or private account details."
+  - type: input
+    id: name
+    attributes:
+      label: Add-on name
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Public HTTPS setup or manifest URL
+      description: Use an unconfigured URL with no account tokens.
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Integration format
+      options:
+        - HTTP manifest add-on
+        - Collection-layout JSON
+        - Executable provider repository
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: Features and supported platforms
+      description: Describe catalogs, metadata, streams or subtitles, supported languages, and devices actually tested.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Accounts, costs, privacy, and limitations
+      description: Include external services, required permissions, data collected, and regional limitations.
+    validations:
+      required: true
+  - type: textarea
+    id: maintainer
+    attributes:
+      label: Maintainer, support, and licensing
+      description: Provide public support/source links and confirm whether you maintain the project or are suggesting it.
+    validations:
+      required: true
