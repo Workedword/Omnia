@@ -1,14 +1,41 @@
-# Omnia releases
+# Omnia
 
-Official signed Omnia app downloads and update notes are published under [Releases](https://github.com/Workedword/Omnia-Releases/releases).
+Official app downloads, features, compatibility information, and release testing notes.
 
-- **Fire TV / Android TV:** choose `Omnia-TV-<version>.apk`.
-- **Android phones / tablets:** choose `Omnia-Mobile-<version>.apk`.
+## Fire Stick / Android TV
 
-Use your installed app's update check when available. Install over the existing app to preserve its data; do not uninstall first. Android requests confirmation before replacing the app and closes it during installation.
+**Omnia TV 0.3.9** · Remote-control interface for Fire TV and Android TV.
 
-The two apps have separate version sequences. Choose by platform, rather than the repository's overall Latest badge.
+[Download and release notes](https://github.com/Workedword/Omnia/releases/tag/v0.3.9%2Btv)
 
-This repository distributes releases; development history and operational credentials are not stored here. Each published app release must include an explicitly attached corresponding-source archive with its build instructions and applicable license notices. GitHub's automatic source ZIP for this repository is not the app source.
+- File: `Omnia-TV-0.3.9.apk`
+- Separate TV update channel; phone APKs are excluded.
+- Build, core/updater unit tests, package identity, signature, and archive integrity verified. Physical-device testing was not repeated for this release.
 
-See [Privacy](OMNIA-PRIVACY.md) and [Source notices](OMNIA-NOTICES.md).
+## Android
+
+**Omnia Android 0.4.8** · Touch interface for Android phones and tablets.
+
+[Download and release notes](https://github.com/Workedword/Omnia/releases/tag/v0.4.8%2Bandroid)
+
+- File: `Omnia-Mobile-0.4.8.apk`
+- Separate phone update channel; TV APKs are excluded.
+- Build and updater/catalog/library tests passed. Package identity, signature, supported architectures, and archive integrity verified. Physical-device testing was not repeated for this release.
+
+## iOS
+
+**In development — no verified public release available.**
+
+The initial 0.4.8 candidate failed simulator startup/navigation checks, including an app crash. It is not approved for general use. A final IPA will be listed here after required checks pass, with installation requirements and known limitations.
+
+## Updating
+
+Use the installed app’s update check when available. Install the correct platform package over your existing app; do not uninstall first. Android asks for installation confirmation and closes the app while applying the update. Platform versions are independent: choose your device category instead of relying on the repository-wide Latest badge.
+
+## Release information
+
+Every final release should list features, changes and fixes, compatibility, installation instructions, checks performed, known issues, and a SHA-256 checksum. Failed or incomplete required tests block final publication.
+
+This repository is for public distribution, not development or credentials. Corresponding source and license materials accompany existing derived releases where required; GitHub’s automatically generated source archive for this downloads repository is not the application source.
+
+[All releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Source notices](OMNIA-NOTICES.md)
