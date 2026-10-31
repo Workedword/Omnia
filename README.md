@@ -1,6 +1,6 @@
 <div align="center">
 
-# O M N I A
+<img src="assets/omnia-logo.svg" alt="Omnia" width="560">
 
 ### Your next watch. Beautifully organized.
 
