@@ -26,9 +26,13 @@ Official app downloads, features, compatibility information, and release testing
 
 ## iOS
 
-**In development — no verified public release available.**
+**Omnia iOS 0.4.8 — simulator checks passed; sideload testing release.**
 
-The initial 0.4.8 candidate failed simulator startup/navigation checks, including an app crash. It is not approved for general use. A final IPA will be listed here after required checks pass, with installation requirements and known limitations.
+[Download and validation notes](https://github.com/Workedword/Omnia/releases/tag/v0.4.8-ios-preview.1)
+
+- File: `Omnia-iOS-0.4.8.ipa`; requires iOS 16.1 or later and signing through a sideloading tool.
+- All three simulator UI tests passed: add-on scrolling/playback, catalog settings, and navigation/settings. Playback pause/resume and the landscape layout were verified.
+- Physical iPhone installation and signed-in iOS sync remain unverified. Read the release limitations before installing.
 
 ## Updating
 
