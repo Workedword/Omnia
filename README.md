@@ -1,48 +1,28 @@
 # Omnia
 
-Official app downloads, features, compatibility information, and release testing notes.
+Your movies and shows, organized across TV and mobile.
 
-[Platform guide](PLATFORMS.md) · [Fire Stick / Android TV](#fire-stick--android-tv) · [Android](#android) · [iOS](#ios)
+## Downloads
 
-## Fire Stick / Android TV
+| Platform | Version | Download |
+| --- | --- | --- |
+| Fire Stick / Android TV | 0.3.9 | [TV APK](https://github.com/Workedword/Omnia/releases/download/v0.3.9%2Btv/Omnia-TV-0.3.9.apk) |
+| Android phones & tablets | 0.4.8 | [Android APK](https://github.com/Workedword/Omnia/releases/download/v0.4.8%2Bandroid/Omnia-Mobile-0.4.8.apk) |
+| iPhone · Beta | 0.4.8 | [iOS IPA](https://github.com/Workedword/Omnia/releases/download/v0.4.8-ios-preview.1/Omnia-iOS-0.4.8.ipa) |
 
-**Omnia TV 0.3.9** · Remote-control interface for Fire TV and Android TV.
+## Features
 
-[Download and release notes](https://github.com/Workedword/Omnia/releases/tag/v0.3.9%2Btv)
+- Browse movies and shows with catalog discovery.
+- Organize your library and account profiles.
+- Connect compatible add-ons and media sources.
+- Enjoy remote-friendly TV navigation or mobile touch controls.
 
-- File: `Omnia-TV-0.3.9.apk`
-- Separate TV update channel; phone APKs are excluded.
-- Build, core/updater unit tests, package identity, signature, and archive integrity verified. Physical-device testing was not repeated for this release.
+## Installation
 
-## Android
+**TV & Android:** Choose the package for your device. To update, use the app’s update checker or install over your existing app without uninstalling.
 
-**Omnia Android 0.4.8** · Touch interface for Android phones and tablets.
+**iOS:** Requires iOS 16.1 or later. Sign the IPA with your Apple account using a sideloading tool. iOS is currently beta; physical-device installation and account sync are not yet verified.
 
-[Download and release notes](https://github.com/Workedword/Omnia/releases/tag/v0.4.8%2Bandroid)
+Media availability depends on your configured sources. Provider subscriptions are separate.
 
-- File: `Omnia-Mobile-0.4.8.apk`
-- Separate phone update channel; TV APKs are excluded.
-- Build and updater/catalog/library tests passed. Package identity, signature, supported architectures, and archive integrity verified. Physical-device testing was not repeated for this release.
-
-## iOS
-
-**Omnia iOS 0.4.8 — simulator checks passed; sideload testing release.**
-
-[Download and validation notes](https://github.com/Workedword/Omnia/releases/tag/v0.4.8-ios-preview.1)
-
-- File: `Omnia-iOS-0.4.8.ipa`; requires iOS 16.1 or later and signing through a sideloading tool.
-- All three simulator UI tests passed: add-on scrolling/playback, catalog settings, and navigation/settings. Playback pause/resume and the landscape layout were verified.
-- Physical iPhone installation and signed-in iOS sync remain unverified. Read the release limitations before installing.
-
-## Updating
-
-Use the installed app’s update check when available. Install the correct platform package over your existing app; do not uninstall first. Android asks for installation confirmation and closes the app while applying the update. Platform versions are independent: choose your device category instead of relying on the repository-wide Latest badge.
-
-## Release information
-
-Every final release should list features, changes and fixes, compatibility, installation instructions, checks performed, known issues, and a SHA-256 checksum. Failed or incomplete required tests block final publication.
-
-This repository is for public distribution, not development or credentials. Corresponding source and license materials accompany existing derived releases where required; GitHub’s automatically generated source archive for this downloads repository is not the application source.
-
-[All releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Source notices](OMNIA-NOTICES.md)
-
+[Platform guide](PLATFORMS.md) · [Release notes](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
