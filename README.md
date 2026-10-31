@@ -1,28 +1,126 @@
-# Omnia
+<div align="center">
 
-Your movies and shows, organized across TV and mobile.
+# O M N I A
 
-## Downloads
+### Your next watch. Beautifully organized.
 
-| Platform | Version | Download |
-| --- | --- | --- |
-| Fire Stick / Android TV | 0.3.9 | [TV APK](https://github.com/Workedword/Omnia/releases/download/v0.3.9%2Btv/Omnia-TV-0.3.9.apk) |
-| Android phones & tablets | 0.4.8 | [Android APK](https://github.com/Workedword/Omnia/releases/download/v0.4.8%2Bandroid/Omnia-Mobile-0.4.8.apk) |
-| iPhone · Beta | 0.4.8 | [iOS IPA](https://github.com/Workedword/Omnia/releases/download/v0.4.8-ios-preview.1/Omnia-iOS-0.4.8.ipa) |
+A cinema-inspired home for movies, shows, and your personal library.<br>
+Made for the big screen. Ready for your phone.
 
-## Features
+[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.9%2Btv/Omnia-TV-0.3.9.apk)
+[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.8%2Bandroid/Omnia-Mobile-0.4.8.apk)
+[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.8-ios-preview.1/Omnia-iOS-0.4.8.ipa)
 
-- Browse movies and shows with catalog discovery.
-- Organize your library and account profiles.
-- Connect compatible add-ons and media sources.
-- Enjoy remote-friendly TV navigation or mobile touch controls.
+[Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
 
-## Installation
+</div>
 
-**TV & Android:** Choose the package for your device. To update, use the app’s update checker or install over your existing app without uninstalling.
+---
 
-**iOS:** Requires iOS 16.1 or later. Sign the IPA with your Apple account using a sideloading tool. iOS is currently beta; physical-device installation and account sync are not yet verified.
+## Explore Omnia
 
-Media availability depends on your configured sources. Provider subscriptions are separate.
+| Discover something great | Pick up where you left off |
+| --- | --- |
+| Artwork-rich movie and TV catalogs, title details, seasons, and episodes. Choose what belongs on your home screen. | Keep current titles close with **Continue Watching**, saved playback progress, and a personal library. |
+| **Make it yours** | **Bring your sources** |
+| A dark cinema layout with red accents, configurable home sections, and appearance preferences. Manage **Account & Profiles** together. | Install compatible catalog, stream, and subtitle add-ons. Manage playback providers in Connected Services. |
+| **Settle in and watch** | **Built for your screen** |
+| Play, pause, seek, choose available audio tracks, and adjust subtitle appearance and timing. | Remote navigation on Fire Stick and Android TV. Touch controls on Android phones and tablets, with an iPhone beta available. |
 
-[Platform guide](PLATFORMS.md) · [Release notes](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
+## Features at a glance
+
+### 🎬 Discovery & home
+
+- Movie and TV catalogs, artwork, title details, seasons, and episodes.
+- Catalog selection and filtering under **Content & Discovery**.
+- Configurable home rows and hero catalog selections.
+- **Continue Watching** for titles in progress.
+
+### 📚 Library & profiles
+
+- Save movies and shows to your library.
+- Keep track of watched titles and playback progress.
+- Manage your Omnia account and profiles in one settings area.
+- Account-based preferences and sync where enabled; account access is required.
+
+### ▶️ Playback & subtitles
+
+- Built-in playback with pause, resume, and seeking.
+- Available audio-track and subtitle selection.
+- Subtitle appearance and timing controls.
+- Playback preferences for your device and source.
+
+### 🧩 Catalogs, add-ons & providers
+
+- Compatible catalog, stream, and subtitle add-ons.
+- Choose which catalog rows appear on your home screen.
+- Manage add-ons and playback providers from settings.
+- Connect supported services such as Real-Debrid using your own account and compatible source configuration.
+
+### ✨ Designed around your device
+
+- Dark, spacious presentation with Omnia's red accents.
+- TV remote navigation and a separate mobile touch interface.
+- Appearance and home-screen customization.
+- In-app update checks on Android and TV, with separate platform downloads.
+
+Feature availability varies by platform, source, and account configuration. iOS is currently beta.
+
+---
+
+## Choose your device
+
+| | Fire Stick / Android TV | Android | iPhone |
+| --- | --- | --- | --- |
+| **Version** | 0.3.9 | 0.4.8 | 0.4.8 · Beta |
+| **Designed for** | Your TV and remote | Phones and tablets | iPhone touch controls |
+| **Package** | TV APK | Android APK | IPA |
+| **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
+| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.9%2Btv/Omnia-TV-0.3.9.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.8%2Bandroid/Omnia-Mobile-0.4.8.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.8-ios-preview.1/Omnia-iOS-0.4.8.ipa) |
+
+## Get started
+
+1. **Choose your device.** Download the matching app above.
+2. **Install Omnia.** On iPhone, sign the IPA with your Apple account using a sideloading tool.
+3. **Make it yours.** Choose catalogs, configure compatible sources, and adjust your preferences.
+4. **Start exploring.** Browse titles, build your library, and pick your next watch.
+
+## Good to know
+
+<details>
+<summary><strong>How do I update?</strong></summary>
+
+Use Omnia's update checker on Android and TV, or install the matching APK over your existing app. Do not uninstall first. Your device may request installation approval and closes the app while applying the update. On iOS, sign and install updates through your sideloading tool.
+
+</details>
+
+<details>
+<summary><strong>Which package should I choose?</strong></summary>
+
+Choose the TV APK for Fire Stick or Android TV, the Android APK for phones and tablets, and the IPA for iPhone. APK files do not install on iOS. Each platform has its own version and release channel.
+
+</details>
+
+<details>
+<summary><strong>Does Omnia include movies or provider subscriptions?</strong></summary>
+
+Media availability comes from your configured sources. Provider subscriptions and accounts are separate from Omnia. Playback support depends on your device, source, and media format.
+
+</details>
+
+<details>
+<summary><strong>What should I know about the iPhone beta?</strong></summary>
+
+Requires iOS 16.1 or later and signing through a sideloading tool. Physical iPhone installation and account sync are not yet verified, so the iOS download remains a beta.
+
+</details>
+
+---
+
+<div align="center">
+
+**OMNIA · Your screen. Your library. Your next watch.**
+
+[Platform guide](PLATFORMS.md) · [Releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
+
+</div>
