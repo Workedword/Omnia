@@ -2,6 +2,8 @@
 
 Official app downloads, features, compatibility information, and release testing notes.
 
+[Platform guide](PLATFORMS.md) · [Fire Stick / Android TV](#fire-stick--android-tv) · [Android](#android) · [iOS](#ios)
+
 ## Fire Stick / Android TV
 
 **Omnia TV 0.3.9** · Remote-control interface for Fire TV and Android TV.
@@ -39,3 +41,4 @@ Every final release should list features, changes and fixes, compatibility, inst
 This repository is for public distribution, not development or credentials. Corresponding source and license materials accompany existing derived releases where required; GitHub’s automatically generated source archive for this downloads repository is not the application source.
 
 [All releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Source notices](OMNIA-NOTICES.md)
+
