@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | Fire Stick / Android TV | APK | TV remote / directional navigation | TV 0.3.9 |
 | Android | APK | Phone touch interface | Android 0.4.8 |
-| iOS | IPA | Phone touch interface | In development; no approved final release |
+| iOS | IPA | Phone touch interface | 0.4.8 sideload testing release; simulator checks passed |
 
 ## Fire Stick / Android TV
 
@@ -22,7 +22,11 @@ Use the Android mobile package on phones. It provides the mobile browsing and pl
 
 ## iOS
 
-The iOS app is in development. The existing 0.4.8 prerelease failed simulator checks, including application crashes, and is not approved for general use. A successful package build alone does not establish that the app works. A final download will be listed after the required checks pass.
+The iOS app shares the mobile touch interface. Version 0.4.8 passed all three automated simulator UI tests covering add-on deep links/scrolling and playback pause/resume, catalog settings, and navigation/settings. Full-screen playback layout was reviewed from a simulator recording.
+
+[IPA download and validation notes](https://github.com/Workedword/Omnia/releases/tag/v0.4.8-ios-preview.1)
+
+Requires iOS 16.1 or later. The unsigned IPA must be signed with your Apple account through a sideloading tool. Physical iPhone installation and signed-in iOS sync remain unverified, so this remains a testing prerelease. Separate backend account checks passed; these are not a signed-in simulator test. Provider-specific streams and every codec/iOS version have not been tested.
 
 ## Updates
 
