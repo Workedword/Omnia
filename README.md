@@ -7,9 +7,9 @@
 A cinema-inspired home for movies, shows, and your personal library.<br>
 Made for the big screen. Ready for your phone.
 
-[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.11%2Btv/Omnia-TV-0.3.11.apk)
-[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bandroid/Omnia-Mobile-0.4.9.apk)
-[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bios/Omnia-iOS-0.4.9.ipa)
+[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.12%2Btv/Omnia-TV-0.3.12.apk)
+[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.10%2Bandroid/Omnia-Mobile-0.4.10.apk)
+[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.10%2Bios/Omnia-iOS-0.4.10.ipa)
 
 [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
 
@@ -32,6 +32,7 @@ Made for the big screen. Ready for your phone.
 ### 🎬 Discovery & home
 
 - Movie and TV catalogs, artwork, title details, seasons, and episodes.
+- Main cast names beneath director credits when supplied by the catalog.
 - Catalog selection and filtering under **Content & Discovery**.
 - Configurable home rows and hero catalog selections.
 - **Continue Watching** for titles in progress.
@@ -73,11 +74,11 @@ Feature availability varies by platform, source, and account configuration. iOS 
 
 | | Fire Stick / Android TV | Android | iPhone |
 | --- | --- | --- | --- |
-| **Version** | 0.3.11 | 0.4.9 | 0.4.9 · Beta |
+| **Version** | 0.3.12 | 0.4.10 | 0.4.10 · Beta |
 | **Designed for** | Your TV and remote | Phones and tablets | iPhone touch controls |
 | **Package** | TV APK | Android APK | IPA |
 | **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
-| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.11%2Btv/Omnia-TV-0.3.11.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bandroid/Omnia-Mobile-0.4.9.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bios/Omnia-iOS-0.4.9.ipa) |
+| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.12%2Btv/Omnia-TV-0.3.12.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.10%2Bandroid/Omnia-Mobile-0.4.10.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.10%2Bios/Omnia-iOS-0.4.10.ipa) |
 
 ## Get started
 
