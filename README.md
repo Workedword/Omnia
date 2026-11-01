@@ -7,7 +7,7 @@
 A cinema-inspired home for movies, shows, and your personal library.<br>
 Made for the big screen. Ready for your phone.
 
-[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.10%2Btv/Omnia-TV-0.3.10.apk)
+[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.11%2Btv/Omnia-TV-0.3.11.apk)
 [![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bandroid/Omnia-Mobile-0.4.9.apk)
 [![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bios/Omnia-iOS-0.4.9.ipa)
 
@@ -73,11 +73,11 @@ Feature availability varies by platform, source, and account configuration. iOS 
 
 | | Fire Stick / Android TV | Android | iPhone |
 | --- | --- | --- | --- |
-| **Version** | 0.3.10 | 0.4.9 | 0.4.9 · Beta |
+| **Version** | 0.3.11 | 0.4.9 | 0.4.9 · Beta |
 | **Designed for** | Your TV and remote | Phones and tablets | iPhone touch controls |
 | **Package** | TV APK | Android APK | IPA |
 | **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
-| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.10%2Btv/Omnia-TV-0.3.10.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bandroid/Omnia-Mobile-0.4.9.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bios/Omnia-iOS-0.4.9.ipa) |
+| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.11%2Btv/Omnia-TV-0.3.11.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bandroid/Omnia-Mobile-0.4.9.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.9%2Bios/Omnia-iOS-0.4.9.ipa) |
 
 ## Get started
 
@@ -112,7 +112,7 @@ Media availability comes from your configured sources. Provider subscriptions an
 <details>
 <summary><strong>What should I know about the iPhone beta?</strong></summary>
 
-Requires iOS 16.1 or later and signing through a sideloading tool. Physical iPhone installation and account sync are not yet verified, so the iOS download remains a beta.
+Requires iOS 16.1 or later and signing through a sideloading tool. The iPhone app is offered as a beta; feature support may vary by device and configured source.
 
 </details>
 
