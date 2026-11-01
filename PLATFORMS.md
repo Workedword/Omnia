@@ -10,15 +10,21 @@
 
 ## Fire Stick / Android TV
 
-Install the TV APK for browsing, library management, account profiles, compatible add-ons, and playback with your remote. Playback support depends on your device and media source.
+Requires Android 7.0 or later on Android TV or an Android-based Fire TV device. Install the TV APK for browsing, library management, account profiles, compatible add-ons, and playback with your remote. Playback support depends on your device and media source.
 
 ## Android
 
-Install the Android APK for the phone and tablet interface, including browsing, library, account settings, compatible add-ons, and playback.
+Requires Android 7.0 or later. Install the Android APK for the phone and tablet interface, including browsing, library, account settings, compatible add-ons, and playback.
 
 ## iPhone
 
 Requires iOS 16.1 or later. Download the IPA and sign it with your Apple account through a sideloading tool. This is a beta; physical-device installation and account sync are not yet verified.
+
+## Community Add-ons
+
+On Android and iPhone 0.4.9 or later, open **Settings → Content & Discovery → Catalogs & add-ons → Community Add-ons**. On TV 0.3.10 or later, open **Addons → Discover add-ons**. Select a category, open a provider's setup page, and install its configured manifest when required.
+
+Catalogs, HTTP add-ons, collection layouts and script-provider repositories use different installation formats. Follow each entry's setup instructions.
 
 ## Updating
 
