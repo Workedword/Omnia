@@ -18,7 +18,7 @@ Requires Android 7.0 or later. Install the Android APK for the phone and tablet 
 
 ## iPhone
 
-Requires iOS 16.1 or later. Download the IPA and sign it with your Apple account through a sideloading tool. This is a beta; physical-device installation and account sync are not yet verified.
+Requires iOS 16.1 or later. Download the IPA and sign it with your Apple account through a sideloading tool. The iPhone app is offered as a beta; feature support may vary by device and configured source.
 
 ## Community Add-ons
 
