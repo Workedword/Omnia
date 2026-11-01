@@ -39,6 +39,8 @@ Independent projects are optional. Their developers maintain availability, accou
 | [IPTV](https://ip-tv.hatip.dev/configure) | Channel catalogs | Choose countries and install the generated manifest. |
 | [Nuvio Sports](https://nuviosports.xyz/configure) | Live sports | Use the developer’s configuration page. |
 | [PenguPlay](https://pengu.uk/) | Provider service | Follow its developer’s account and setup requirements. |
+| [Sports Replays](https://sports-replay.michaelrobgrove.workers.dev/configure) | Sports replays | Previously unreachable; availability and playback unverified. |
+| [CNCVerse Bridge](https://cncverse.dpdns.org/) | Provider bridge | Configure your own movie, show, Indian-language, live TV and sports profile. Keep its generated manifest private. Playback unverified. |
 
 ## Install on your device
 
