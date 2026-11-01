@@ -46,9 +46,11 @@ Independent projects are optional. Their developers maintain availability, accou
 
 ## Install on your device
 
-- **Android / iPhone (0.4.9 or later):** open **Settings → Content & Discovery → Catalogs & add-ons → Community Add-ons**. Choose **Providers** for Torrentio, Comet, or MediaFusion, or **Live TV & Sports** for channel and sports entries.
-- Select **Setup & details**, configure the service, then add its generated manifest URL in Omnia. Entries with a ready-to-install public manifest also show an Install button. Collection JSON and executable plugins use separate import paths.
-- **Fire Stick / Android TV:** configure on your phone, then use your Omnia account’s add-on sync where supported, or enter the manifest URL on the TV.
+- **Latest TV / Android:** open **Settings → Add-ons → Discover add-ons**. Choose **Omnia Official** or **Community**, then filter by source type. Installed HTTP add-ons remain in **Current Add-ons** and are hidden from availability. Use **Sync add-ons** to share the current profile's list.
+- **iPhone 0.4.10 Beta:** open **Settings → Content & Discovery → Catalogs & add-ons → Community Add-ons**. The next settings and safe-sync update is pending; editing an account upgraded to safe sync requires a compatible client.
+- Choose **Providers** for Torrentio, Comet, or MediaFusion, or **Live TV & Sports** for channel and sports entries.
+- Select **Setup & details**, configure the service, then add its generated manifest URL in Omnia. Entries with a ready-to-install public manifest also show an Install button. Collection JSON and script-provider repositories use separate import paths. In the latest TV/Android apps, use **Settings → Add-ons → Script providers** for the latter.
+- **Fire Stick / Android TV:** configure a provider in a browser and enter its generated manifest URL in Omnia, or sync the add-on list from another device signed into the same Omnia account and profile.
 - Keep access tokens and personalized manifest URLs private. Never include them in an issue or pull request.
 
 ## Build for the community
@@ -60,3 +62,4 @@ Provide a public setup URL, the integration format, supported resources and devi
 Useful integration formats include HTTPS JSON manifests for catalogs, metadata, streams, and subtitles; collection-layout JSON; and supported provider repositories. Clearly distinguish these formats rather than presenting every URL as an installable manifest.
 
 Only share content and services you are authorized to distribute. Required third-party notices remain with their respective projects.
+
