@@ -16,12 +16,13 @@ Catalogs, collections, subtitles, and community sources.
 
 [Catalog manifest](https://catalog.nuvio.tv/manifest.json) · [Configure](https://catalog.nuvio.tv/configure)
 
-## Optional Omnia catalogs
+## Optional Omnia add-ons
 
 | Add-on | Discover | Setup |
 | --- | --- | --- |
 | **Omnia Catalogs** | Choose and reorder movie, show, genre, and collection rows. | [Configure](https://omnia.161.97.128.244.sslip.io/catalogs/configure) |
 | **Omnia India** | Hindi films, Indian cinema, TV shows, and web-series discovery. | [Configure](https://omnia.161.97.128.244.sslip.io/catalogs/india/configure) |
+| **Omnia India Providers** | Curated setup for nine externally maintained Hindi movie and show providers. Separate provider-repository installation; playback unverified. | [Configure](https://omnia.161.97.128.244.sslip.io/catalogs/india/providers/configure) |
 
 Catalogs organize titles and their metadata. Playback comes from the stream providers you choose.
 
@@ -31,9 +32,9 @@ Independent projects are optional. Their developers maintain availability, accou
 
 | Project | Category | How to use |
 | --- | --- | --- |
-| [The Kollection](https://kollection.tv/set-up-collection) | Collection layouts | Export a layout; install its catalog dependencies before importing. |
-| [Xperience](https://xperience-app.com/) | Collection builder | Use manual manifest or JSON export. Its third-party account-push feature does not connect to Omnia. |
-| [Hindi-Nuvio](https://github.com/D3adlyRocket/Hindi-Nuvio) | Provider scripts | Executable plugin format; runtime support varies by platform. |
+| [Torrentio](https://torrentio.strem.fun/configure) | Playback providers | Configure filters and your optional debrid service, then add the generated manifest. Keep personalized links private. |
+| [Comet](https://comet.elfhosted.com/configure) | Playback providers | Configure your selected instance and source service. Instance limits and requirements vary. |
+| [MediaFusion](https://mediafusion.elfhosted.com/configure) | Playback providers | Configure sources, optional debrid services and discovery preferences, then add the generated manifest. |
 | [PlavioHD](https://hd.plavio.site/configure) | Media add-on | Configure the provider and install its generated manifest. |
 | [Sports Streams](https://sports.highfly.dev/configure) | Live sports | Configure your leagues; provider verification or paid features may apply. |
 | [IPTV](https://ip-tv.hatip.dev/configure) | Channel catalogs | Choose countries and install the generated manifest. |
