@@ -41,6 +41,7 @@ Independent projects are optional. Their developers maintain availability, accou
 | [PenguPlay](https://pengu.uk/) | Provider service | Follow its developer’s account and setup requirements. |
 | [Sports Replays](https://sports-replay.michaelrobgrove.workers.dev/configure) | Sports replays | Previously unreachable; availability and playback unverified. |
 | [CNCVerse Bridge](https://cncverse.dpdns.org/) | Provider bridge | Configure your own movie, show, Indian-language, live TV and sports profile. Keep its generated manifest private. Playback unverified. |
+| [StreamRadar India](https://streamradar.bricksgenius.com/configure) | Indian OTT catalogs | Choose services, their order, Trending, Just In, Coming Soon, and poster style. No account required. Public manifest checked; playback unverified. |
 
 ## Install on your device
 
