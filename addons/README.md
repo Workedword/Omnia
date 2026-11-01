@@ -15,7 +15,7 @@ Catalogs, collections, subtitles, and community sources.
 | Add-on | Discover | Setup |
 | --- | --- | --- |
 | **Omnia Catalogs** | Choose and reorder movie, show, genre, and collection rows. | [Configure](https://omnia.161.97.128.244.sslip.io/catalogs/configure) |
-| **Omnia India** | Hindi films, Indian cinema, TV shows, and web-series discovery. | In development; metadata activation required. |
+| **Omnia India** | Hindi films, Indian cinema, TV shows, and web-series discovery. | [Configure](https://omnia.161.97.128.244.sslip.io/catalogs/india/configure) |
 
 Catalogs organize titles and their metadata. Playback comes from the stream providers you choose.
 
