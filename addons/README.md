@@ -46,7 +46,8 @@ Independent projects are optional. Their developers maintain availability, accou
 
 ## Install on your device
 
-- **Android / iPhone:** open Catalogs & add-ons and add a compatible manifest URL. Collection JSON and executable plugins use separate import paths.
+- **Android / iPhone (0.4.9 or later):** open **Settings → Content & Discovery → Catalogs & add-ons → Community Add-ons**. Choose **Providers** for Torrentio, Comet, or MediaFusion, or **Live TV & Sports** for channel and sports entries.
+- Select **Setup & details**, configure the service, then add its generated manifest URL in Omnia. Entries with a ready-to-install public manifest also show an Install button. Collection JSON and executable plugins use separate import paths.
 - **Fire Stick / Android TV:** configure on your phone, then use your Omnia account’s add-on sync where supported, or enter the manifest URL on the TV.
 - Keep access tokens and personalized manifest URLs private. Never include them in an issue or pull request.
 
