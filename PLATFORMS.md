@@ -20,9 +20,13 @@ Requires Android 7.0 or later. Install the Android APK for the phone and tablet 
 
 Requires iOS 16.1 or later. Download the IPA and sign it with your Apple account through a sideloading tool. The iPhone app is offered as a beta; feature support may vary by device and configured source.
 
-## Community Add-ons
+## Catalogs & add-ons
 
-On Android and iPhone 0.4.9 or later, open **Settings → Content & Discovery → Catalogs & add-ons → Community Add-ons**. On TV 0.3.10 or later, open **Addons → Discover add-ons**. Select a category, open a provider's setup page, and install its configured manifest when required.
+On TV 0.3.17 and Android 0.4.15, open **Settings → Add-ons** to manage **Current Add-ons**, browse **Discover add-ons**, or **Sync add-ons**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices are under **Settings → Content → Choose Home Catalogs**. Script-based sources have their own **Script providers** entry under Add-ons.
+
+The current iPhone 0.4.10 Beta uses **Settings → Content & Discovery → Catalogs & add-ons → Community Add-ons**. Its next settings and safe-sync update is pending. Older clients can read saved add-ons, but editing an account upgraded to safe sync requires a compatible client.
+
+Select a category, open a provider's setup page, and install its configured manifest when required.
 
 Catalogs, HTTP add-ons, collection layouts and script-provider repositories use different installation formats. Follow each entry's setup instructions.
 
@@ -33,3 +37,4 @@ On Android and TV, use the app's update checker or install the matching APK over
 On iOS, use your sideloading tool to sign and install updates. APKs do not work on iPhone.
 
 Choose your platform above rather than relying on GitHub's repository-wide Latest badge. Media sources and provider subscriptions are separate from Omnia.
+
