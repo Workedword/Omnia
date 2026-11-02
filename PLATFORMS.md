@@ -22,7 +22,7 @@ Requires iOS 16.1 or later. Download the IPA and sign it with your Apple account
 
 ## Catalogs & add-ons
 
-On TV 0.3.18, Android 0.4.17 and iOS 0.4.18 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
+On TV 0.3.21, Android 0.4.20 and iOS 0.4.18 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
 
 iOS 0.4.18 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
 
@@ -41,3 +41,4 @@ On Android and TV, use the app's update checker or install the matching APK over
 On iOS, use your sideloading tool to sign and install updates. APKs do not work on iPhone.
 
 Choose your platform above rather than relying on GitHub's repository-wide Latest badge. Media sources and provider subscriptions are separate from Omnia.
+

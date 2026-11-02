@@ -7,8 +7,8 @@
 A cinema-inspired home for movies, shows, and your personal library.<br>
 Made for the big screen. Ready for your phone.
 
-[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.18%2Btv/Omnia-TV-0.3.18.apk)
-[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.17%2Bandroid/Omnia-Mobile-0.4.17.apk)
+[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.21%2Btv/Omnia-TV-0.3.21.apk)
+[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.20%2Bandroid/Omnia-Mobile-0.4.20.apk)
 [![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.18%2Bios/Omnia-iOS-0.4.18.ipa)
 
 [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
@@ -34,7 +34,8 @@ Made for the big screen. Ready for your phone.
 - Movie and TV catalogs, artwork, title details, seasons, and episodes.
 - Main cast names beneath director credits when supplied by the catalog.
 - Home catalog choices and Collections together under **Settings → Content** on TV, Android and the current iOS beta.
-- Configurable home rows and hero catalog selections.
+- Configurable home rows and up to 12 hero catalog selections on Android and TV.
+- Search followed by inline Discover filters on TV.
 - Collections can hide their source rows from Home to avoid duplicates.
 - **Continue Watching** for titles in progress.
 
@@ -43,7 +44,8 @@ Made for the big screen. Ready for your phone.
 - Save movies and shows to your library.
 - Keep track of watched titles and playback progress.
 - Manage your Omnia account and profiles in one settings area.
-- Account-based preferences and sync where enabled; account access is required.
+- Optional **Sync settings across devices**; keep it off for separate device preferences.
+- Secure account creation, password recovery and linked-account app-password setup on Android and TV.
 
 ### ▶️ Playback & subtitles
 
@@ -70,6 +72,7 @@ Made for the big screen. Ready for your phone.
 - Appearance and home-screen customization.
 - **Restore default settings** is available directly in Settings, in Essentials and Advanced. Confirmation keeps account and media data intact.
 - In-app update checks on Android and TV, with separate platform downloads.
+- Bounded artwork/network caches and automatic cleanup of obsolete update installers on Android and TV.
 
 Feature availability varies by platform, source, and account configuration. The current iOS beta includes the updated settings layout and add-on sync. iOS 0.4.18 is a nonoptimized sideloading beta; physical-device and simulator testing remain outstanding. Cross-device settings sharing requires compatible app versions.
 
@@ -79,11 +82,11 @@ Feature availability varies by platform, source, and account configuration. The 
 
 | | Fire Stick / Android TV | Android | iPhone |
 | --- | --- | --- | --- |
-| **Version** | 0.3.18 | 0.4.17 | 0.4.18 · Beta |
+| **Version** | 0.3.21 | 0.4.20 | 0.4.18 · Beta |
 | **Designed for** | Your TV and remote | Phones and tablets | iPhone touch controls |
 | **Package** | TV APK | Android APK | IPA |
 | **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
-| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.18%2Btv/Omnia-TV-0.3.18.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.17%2Bandroid/Omnia-Mobile-0.4.17.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.18%2Bios/Omnia-iOS-0.4.18.ipa) |
+| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.21%2Btv/Omnia-TV-0.3.21.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.20%2Bandroid/Omnia-Mobile-0.4.20.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.18%2Bios/Omnia-iOS-0.4.18.ipa) |
 
 ## Get started
 
@@ -137,3 +140,4 @@ Please keep passwords, verification codes and private provider keys out of suppo
 [Platform guide](PLATFORMS.md) · [Releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
 
 </div>
+
