@@ -7,9 +7,9 @@
 A cinema-inspired home for movies, shows, and your personal library.<br>
 Made for the big screen. Ready for your phone.
 
-[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.21%2Btv/Omnia-TV-0.3.21.apk)
-[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.20%2Bandroid/Omnia-Mobile-0.4.20.apk)
-[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.18%2Bios/Omnia-iOS-0.4.18.ipa)
+[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.24%2Btv/Omnia-TV-0.3.24.apk)
+[![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.23%2Bandroid/Omnia-Mobile-0.4.23.apk)
+[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.23%2Bios/Omnia-iOS-0.4.23.ipa)
 
 [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
 
@@ -45,7 +45,8 @@ Made for the big screen. Ready for your phone.
 - Keep track of watched titles and playback progress.
 - Manage your Omnia account and profiles in one settings area.
 - Optional **Sync settings across devices**; keep it off for separate device preferences.
-- Secure account creation, password recovery and linked-account app-password setup on Android and TV.
+- Sign in with your email and Omnia password. Create an account or reset your password from the sign-in screen.
+- Use the same Omnia account across your devices to keep your profiles and viewing progress together.
 
 ### ▶️ Playback & subtitles
 
@@ -70,11 +71,11 @@ Made for the big screen. Ready for your phone.
 - Dark, spacious presentation with Omnia's red accents.
 - TV remote navigation and a separate mobile touch interface.
 - Appearance and home-screen customization.
-- **Restore default settings** is available directly in Settings, in Essentials and Advanced. Confirmation keeps account and media data intact.
+- **Restore default settings** is available directly in Settings. Confirmation keeps account and media data intact.
 - In-app update checks on Android and TV, with separate platform downloads.
 - Bounded artwork/network caches and automatic cleanup of obsolete update installers on Android and TV.
 
-Feature availability varies by platform, source, and account configuration. The current iOS beta includes the updated settings layout and add-on sync. iOS 0.4.18 is a nonoptimized sideloading beta; physical-device and simulator testing remain outstanding. Cross-device settings sharing requires compatible app versions.
+Feature availability varies by platform, source, and account configuration. The iPhone beta includes the mobile interface, account sign-in, updated settings and add-on sync. Cross-device settings sharing requires compatible app versions.
 
 ---
 
@@ -82,18 +83,19 @@ Feature availability varies by platform, source, and account configuration. The 
 
 | | Fire Stick / Android TV | Android | iPhone |
 | --- | --- | --- | --- |
-| **Version** | 0.3.21 | 0.4.20 | 0.4.18 · Beta |
+| **Version** | 0.3.24 | 0.4.23 | 0.4.23 · Beta |
 | **Designed for** | Your TV and remote | Phones and tablets | iPhone touch controls |
 | **Package** | TV APK | Android APK | IPA |
 | **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
-| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.21%2Btv/Omnia-TV-0.3.21.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.20%2Bandroid/Omnia-Mobile-0.4.20.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.18%2Bios/Omnia-iOS-0.4.18.ipa) |
+| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.24%2Btv/Omnia-TV-0.3.24.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.23%2Bandroid/Omnia-Mobile-0.4.23.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.23%2Bios/Omnia-iOS-0.4.23.ipa) |
 
 ## Get started
 
 1. **Choose your device.** Download the matching app above.
 2. **Install Omnia.** On iPhone, sign the IPA with your Apple account using a sideloading tool.
-3. **Make it yours.** Choose catalogs, configure compatible sources, and adjust your preferences.
-4. **Start exploring.** Browse titles, build your library, and pick your next watch.
+3. **Sign in to Omnia.** Use your email and Omnia password. Choose the same account and profile on your other devices. Use **Forgot password** if you need to set or reset your password.
+4. **Make it yours.** Choose catalogs, configure compatible sources, and adjust your preferences.
+5. **Start exploring.** Browse titles, build your library, and pick your next watch.
 
 ## Good to know
 
@@ -121,7 +123,7 @@ Media availability comes from your configured sources. Provider subscriptions an
 <details>
 <summary><strong>What should I know about the iPhone beta?</strong></summary>
 
-Requires iOS 16.1 or later and signing through a sideloading tool. The iPhone app is offered as a nonoptimized beta; this version has not been tested on a physical iPhone or simulator. Feature support and performance may vary by device and configured source.
+Bring Omnia’s mobile interface to your iPhone with iOS 16.1 or later. Sign and install the IPA through your preferred sideloading tool. This is a beta, so compatibility and performance can vary. Apple silicon Mac compatibility is experimental; the download is an iPhone IPA.
 
 </details>
 
@@ -140,4 +142,3 @@ Please keep passwords, verification codes and private provider keys out of suppo
 [Platform guide](PLATFORMS.md) · [Releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
 
 </div>
-

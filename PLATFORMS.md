@@ -18,13 +18,17 @@ Requires Android 7.0 or later. Install the Android APK for the phone and tablet 
 
 ## iPhone
 
-Requires iOS 16.1 or later. Download the IPA and sign it with your Apple account through a sideloading tool. The iPhone app is offered as a full-featured, nonoptimized Debug beta. This version has passed device compilation and package checks but has not been tested in an iPhone simulator or on a physical iPhone. Feature support and performance may vary.
+Enjoy Omnia’s mobile interface on iPhone with iOS 16.1 or later. Download the IPA, then sign and install it with your Apple account through a sideloading tool. This is a beta; feature support and performance can vary. Apple silicon Mac compatibility is experimental, and the download remains an iPhone IPA.
+
+## Your account
+
+Create an Omnia account with your email and a password, then use that account on each device. If you forgot your password—or previously used a social sign-in without setting one—choose **Forgot password** and follow the email instructions. Your existing profiles, library and history remain attached to your account. After signing in, you can optionally link Discord to manage that same account through the bot.
 
 ## Catalogs & add-ons
 
-On TV 0.3.21, Android 0.4.20 and iOS 0.4.18 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
+On TV 0.3.24, Android 0.4.23 and iOS 0.4.23 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
 
-iOS 0.4.18 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
+iOS 0.4.23 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
 
 Select a category, open a provider's setup page, and install its configured manifest when required.
 
@@ -32,7 +36,7 @@ Catalogs, HTTP add-ons, collection layouts and script-provider repositories use 
 
 ## Restore your preferences
 
-On the latest TV, Android and iOS beta apps, open **Settings → Restore default settings**. This entry is available in Essentials and Advanced. Confirm the reset to restore preferences while keeping your account, installed add-ons, Collections, library and watch history.
+On the latest TV, Android and iOS beta apps, open **Settings → Restore default settings**. Confirm the reset to restore preferences while keeping your account, installed add-ons, Collections, library and watch history.
 
 ## Updating
 
@@ -41,4 +45,3 @@ On Android and TV, use the app's update checker or install the matching APK over
 On iOS, use your sideloading tool to sign and install updates. APKs do not work on iPhone.
 
 Choose your platform above rather than relying on GitHub's repository-wide Latest badge. Media sources and provider subscriptions are separate from Omnia.
-
