@@ -122,6 +122,12 @@ Requires iOS 16.1 or later and signing through a sideloading tool. The iPhone ap
 
 </details>
 
+## Contact
+
+Omnia support: [omniastreams@gmail.com](mailto:omniastreams@gmail.com).
+
+Please keep passwords, verification codes and private provider keys out of support messages.
+
 ---
 
 <div align="center">
