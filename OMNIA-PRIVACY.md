@@ -8,4 +8,6 @@ Installed add-ons receive catalog, metadata, stream and subtitle requests. Conte
 
 GitHub receives update checks and APK download requests. This build does not configure a Sentry DSN or an analytics endpoint. The server may keep operational HTTP logs. No claim is made that requests to add-ons or optional third-party services are anonymous.
 
-This deployment is currently restricted to the owner's pre-provisioned account. Account deletion and password recovery are managed by the owner on the private server; public signup and automated recovery email are not configured.
+Access currently uses owner-managed Omnia accounts. Account deletion and recovery requests are managed by the owner on the private server; public signup and automated recovery email are not configured.
+
+For account or privacy requests, contact [omniastreams@gmail.com](mailto:omniastreams@gmail.com). Never include your password, verification codes or provider keys.
