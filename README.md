@@ -9,9 +9,10 @@ Made for the big screen. Ready for your phone.
 
 [![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.25%2Btv/Omnia-TV-0.3.25.apk)
 [![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bandroid/Omnia-Mobile-0.4.24.apk)
+[![Discord](https://img.shields.io/badge/Discord-Join_Omnia_Streams-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/svMgchRA3f)
 [![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24.ipa)
 
-[Developers](#build-with-us) · [Contribute](CONTRIBUTING.md) · [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
+[Discord](https://discord.gg/svMgchRA3f) · [Developers](#build-with-us) · [Contribute](CONTRIBUTING.md) · [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
 
 </div>
 
@@ -146,6 +147,8 @@ Download a release to use Omnia, or clone this repository to help develop it. Ac
 
 
 ## Contact
+
+Join [Omnia Streams on Discord](https://discord.gg/svMgchRA3f) for community discussion, support and release updates.
 
 Omnia support: [omniastreams@gmail.com](mailto:omniastreams@gmail.com).
 
