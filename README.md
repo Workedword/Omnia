@@ -127,22 +127,6 @@ Bring Omnia’s mobile interface to your iPhone with iOS 16.1 or later. Sign and
 
 </details>
 
-## Contact
-
-Omnia support: [omniastreams@gmail.com](mailto:omniastreams@gmail.com).
-
-Please keep passwords, verification codes and private provider keys out of support messages.
-
----
-
-<div align="center">
-
-**OMNIA · Your screen. Your library. Your next watch.**
-
-[Platform guide](PLATFORMS.md) · [Releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
-
-</div>
-
 ## Build with us
 
 Omnia welcomes bug fixes, accessible interface improvements, translations, tests and documentation. Start with the platform you use, then open a focused pull request.
@@ -159,3 +143,20 @@ The source baseline is TV **0.3.25** and shared mobile **0.4.24**. The exact iOS
 [Contributing](CONTRIBUTING.md) · [Security reports](SECURITY.md) · [Project structure](docs/PROJECT-STRUCTURE.md) · [License and notices](OMNIA-NOTICES.md)
 
 Download a release to use Omnia, or clone this repository to help develop it. Account and Discord services are operated separately; production access is not needed to contribute to the clients.
+
+
+## Contact
+
+Omnia support: [omniastreams@gmail.com](mailto:omniastreams@gmail.com).
+
+Please keep passwords, verification codes and private provider keys out of support messages.
+
+---
+
+<div align="center">
+
+**OMNIA · Your screen. Your library. Your next watch.**
+
+[Platform guide](PLATFORMS.md) · [Releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
+
+</div>
