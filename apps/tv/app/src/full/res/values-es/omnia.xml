@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Omnia</string>
+    <string name="cd_nuvio">Omnia</string>
+    <string name="cd_nuvio_logo">OmniaTV</string>
+    <string name="layout_selection_welcome">Bienvenido a Omnia</string>
+    <string name="auth_notice_nuvio_logged_out">Has sido desconectado de Omnia. Por favor, inicia sesión de nuevo.</string>
+    <string name="appearance_launcher_artwork_subtitle">Elige cómo aparece Omnia en la pantalla de inicio de tu TV</string>
+    <string name="appearance_app_icon_confirmation_message">Cambiar a %1$s cerrará Omnia. Es posible que el banner de TV requiera reiniciar el dispositivo antes de actualizarse. Selecciona OK para continuar.</string>
+    <string name="about_supporters_contributors">Apoya a Omnia</string>
+    <string name="licenses_attributions_subtitle">Proveedores de datos, créditos de servicios y licencias de reproducción de Android utilizadas por Omnia.</string>
+    <string name="licenses_attributions_tmdb_body">Omnia usa la API de TMDB para metadatos de películas y series, ilustraciones, tráilers, elenco, detalles de producción, colecciones y recomendaciones. Este producto usa la API de TMDB pero no está respaldado ni certificado por TMDB.</string>
+    <string name="licenses_attributions_trakt_body">Omnia se conecta a Trakt para autenticación de cuenta, historial de visualización, sincronización de progreso, datos de biblioteca, calificaciones, listas y comentarios. Omnia no está afiliado ni respaldado por Trakt.</string>
+    <string name="licenses_attributions_simkl_body">Omnia se conecta a Simkl para autenticación de cuenta, listas de deseos, historial de visualización, progreso de reproducción y scrobbling. Los datos de seguimiento de películas, series y anime los proporciona Simkl. Omnia no está afiliado ni respaldado por Simkl.</string>
+    <string name="licenses_attributions_premiumize_body">Omnia se conecta a Premiumize para autenticación de cuenta, acceso a la biblioteca en la nube, comprobaciones de caché y funciones de reproducción en la nube. Omnia no está afiliado ni respaldado por Premiumize.</string>
+    <string name="licenses_attributions_torbox_body">Omnia se conecta a TorBox para autenticación de cuenta, acceso a la biblioteca en la nube, comprobaciones de caché y funciones de reproducción en la nube. Omnia no está afiliado ni respaldado por TorBox.</string>
+    <string name="licenses_attributions_mdblist_body">Omnia usa MDBList para calificaciones, historial de visualización y seguimiento de reproducción. Omnia no está afiliado ni respaldado por MDBList.</string>
+    <string name="licenses_attributions_introdb_body">Omnia usa la API de IntroDB para marcas de tiempo de introducción, resumen, créditos y avance proporcionadas por la comunidad, utilizadas por los controles de salto. Omnia no está afiliado ni respaldado por IntroDB.</string>
+    <string name="licenses_attributions_imdb_body">Omnia usa IMDb Non-Commercial Datasets, incluido title.ratings.tsv.gz, para calificaciones y recuentos de votos de IMDb. Información cortesía de IMDb (https://www.imdb.com). Usado con permiso. Los datos de IMDb son para uso personal y no comercial según los términos de IMDb.</string>
+    <string name="tracking_sources_subtitle">Elige de dónde lee Omnia tu biblioteca y tu progreso de visualización. La reproducción hace scrobbling en todos los servicios conectados.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Elige el servicio que Omnia usa para reanudar y Continuar viendo. El scrobbling permanece activo en todos los servicios conectados.</string>
+    <string name="tracking_library_source_dialog_subtitle">Elige el servicio que Omnia lee para tu Biblioteca. La reproducción hace scrobbling en todos los servicios conectados.</string>
+    <string name="experience_mode_choose_title">Elige tu experiencia de Omnia</string>
+    <string name="advanced_nuvio_focus_scroll">Desplazamiento de enfoque de Omnia</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Usa la animación y el posicionamiento personalizados de desplazamiento de enfoque global de Omnia.</string>
+    <string name="playback_engine_exoplayer_desc">Mejor compatibilidad con las funciones actuales de Omnia.</string>
+    <string name="playback_engine_mvplayer_desc">Usa libmpv con los controles OSD de Omnia. Experimental.</string>
+    <string name="debrid_device_auth_instructions">On your phone, open the address below and enter this code to connect this TV.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">Elige si la reanudación y continuar viendo deben usar Trakt o Omnia Sync mientras el scrobbling de Trakt permanece activo.</string>
+    <string name="trakt_watch_progress_source_nuvio">Omnia Sync</string>
+    <string name="trakt_library_source_subtitle">Elige de qué fuente lee Omnia tu biblioteca</string>
+    <string name="trakt_library_source_nuvio">Biblioteca de Omnia</string>
+    <string name="trakt_library_source_nuvio_selected">Biblioteca de Omnia seleccionada</string>
+    <string name="trakt_watch_progress_nuvio_selected">Fuente de progreso de visualización establecida en Omnia Sync</string>
+    <string name="trakt_disconnect_subtitle">Esto desconectará tu cuenta de Trakt de Omnia.</string>
+    <string name="profile_custom_avatar_web_panel_note">Las URLs de avatar personalizado se pueden configurar desde el panel web de Omnia.</string>
+    <string name="profile_background_member_note">Las URLs de fondo personalizado se pueden configurar desde el panel web de Omnia.</string>
+    <string name="profile_pin_overlay_forgot_hint">¿Olvidaste el PIN? Restablécelo desde tu cuenta de Omnia en sitio web de Omnia.</string>
+    <string name="p2p_consent_body">Esta fuente utiliza tecnología de redes P2P (torrent). Al activar P2P, reconoces y aceptas que:
+
+• Tu dirección IP será visible para otros nodos de la red
+• Eres el único responsable del contenido al que accedes
+• Confirmas que tienes el derecho legal de reproducir este contenido en tu jurisdicción
+• Omnia no aloja, distribuye ni controla ningún contenido P2P
+• Omnia no asume ninguna responsabilidad por las consecuencias legales derivadas del uso de fuentes P2P
+
+Utilizas esta función bajo tu entera responsabilidad. P2P se puede desactivar en cualquier momento desde Ajustes.</string>
+    <string name="collections_editor_tmdb_title_helper">Se muestra como el nombre de la fila/pestaña. Si está vacío, Omnia crea uno a partir de la fuente.</string>
+    <string name="playback_player_internal_desc">Usa el reproductor integrado de OmniaTV</string>
+    <string name="simkl_sync_info_description">Omnia comprueba Simkl automáticamente como máximo una vez cada %1$d minutos. Los cambios realizados a través de otra aplicación o del sitio web de Simkl pueden tardar ese tiempo en aparecer.</string>
+    <string name="simkl_sync_info_manual">Los cambios realizados en Omnia se envían a Simkl de inmediato. Usa Sincronizar ahora cuando quieras que Omnia compruebe antes los cambios remotos.</string>
+    <string name="about_made_with_love">Omnia for Android TV</string>
+    <string name="about_privacy_policy">Source code</string>
+    <string name="about_privacy_policy_subtitle">Omnia source and GPL license</string>
+    <string name="licenses_attributions_nuvio_title">Omnia</string>
+    <string name="support_nuvio_name">Apoya a Omnia</string>
+    <string name="supporters_contributors_subtitle">Las personas que respaldan Omnia y los colaboradores que lo construyen en TV y móvil.</string>
+    <string name="supporters_contributors_donate_copy">Omnia seguirá siendo gratis y de código abierto. Si deseas respaldar el proyecto, puedes ayudar a cubrir el tiempo e infraestructura detrás.</string>
+    <string name="supporters_contributors_donate_button">Donar a Omnia</string>
+    <string name="supporters_contributors_qr_subtitle">Abre el enlace en tu teléfono para apoyar a Omnia.</string>
+    <string name="supporter_membership_title">Membresía de apoyador de Omnia</string>
+    <string name="supporter_membership_description">Apoyar a Omnia ayuda a cubrir la infraestructura y el desarrollo continuo, manteniendo la experiencia principal gratuita para todos.</string>
+    <string name="supporter_membership_connected_description">No se encontró ningún nivel activo de Omnia en esta cuenta de Patreon. Consulta las opciones disponibles o actualiza después de cambiar tu membresía de Patreon.</string>
+    <string name="supporters_since">Apoyando a Omnia desde %1$s</string>
+    <string name="supporters_since_unknown">Apoyando a Omnia con orgullo</string>
+    <string name="sponsors_detail_copy">Los patrocinadores ayudan a impulsar Omnia apoyando las distintas partes del desarrollo.</string>
+    <string name="library_source_nuvio">OMNIA</string>
+    <string name="custom_server_error_official_active">Omnia account service es el servidor oficial y ya está seleccionado.</string>
+    <string name="custom_server_error_official_available">Omnia account service es el servidor oficial. Cierra este diálogo y elige Usar servidor oficial para volver a él.</string>
+    <string name="collections_file_description">Reads your compatible collection file from the Downloads folder.</string>
+    <string name="addon_manage_from_phone_subtitle">Manage add-ons in Omnia on your phone using the same account and profile.</string>
+    <string name="addon_manage_addons_only_from_phone_subtitle">Install or remove add-ons in the Omnia phone app.</string>
+    <string name="addon_manage_collections_from_phone_subtitle">Manage collections from your phone using the address shown.</string>
+    <string name="addon_qr_scan_instruction">Open Omnia on your phone → Settings → Catalogs &amp; add-ons. Use the same account and profile, then Refresh Add-ons on this TV. For device-specific changes, open the address below on the same Wi-Fi and keep this screen open.</string>
+    <string name="addon_qr_addons_only_scan_instruction">Manage add-ons in the Omnia phone app using the same account and profile, then Refresh Add-ons on this TV. The address below is an alternative on the same Wi-Fi.</string>
+    <string name="addon_qr_collections_scan_instruction">Manage collections using the address below in your phone browser on the same Wi-Fi. Keep this screen open.</string>
+    <string name="custom_poster_qr_instruction">Open the address below in your phone browser to change this TV\'s poster settings. Use the same Wi-Fi and keep this screen open.</string>
+    <string name="stream_badge_qr_instruction">Open the address below in your phone browser to change this TV\'s badge settings. Use the same Wi-Fi and keep this screen open.</string>
+    <string name="plugin_qr_instruction">Manage repositories in Omnia on your phone where supported, or open the address below on the same Wi-Fi. Keep this screen open for local changes.</string>
+    <string name="plugin_manage_from_phone_subtitle">Manage repositories from your phone using the displayed address.</string>
+    <string name="mdblist_awaiting_instruction">On your phone, enter this code at the address below.</string>
+    <string name="auth_qr_scan_instruction">Enter the short code at the address below in your phone browser.</string>
+    <string name="account_signin_qr_subtitle">Use the displayed address and code to sign in from your phone.</string>
+    <string name="qr_login_scan_prompt">Open the address and sign in on your phone</string>
+    <string name="supporters_contributors_qr_title">Open on your phone</string>
+    <string name="account_error_qr_login_expired">Sign-in code expired. Please try again.</string>
+    <string name="account_error_invalid_qr_login">Invalid sign-in code.</string>
+    <string name="account_error_qr_login_other_device">This sign-in code belongs to another device.</string>
+    <string name="account_error_qr_login_outdated">Device sign-in is unavailable. Please try again later.</string>
+    <string name="account_error_qr_login_missing_setup">Device sign-in is unavailable. Please try again later.</string>
+    <string name="account_error_qr_login_misconfigured">Device sign-in is unavailable. Please try again later.</string>
+    <string name="account_error_qr_login_invalid_request">Sign-in request was invalid. Please retry.</string>
+    <string name="supporters_contributors_qr_hint">Open the address on your phone or use the button below.</string>
+    <string name="contributors_show_kofi_qr">Show support link</string>
+    <string name="contributors_hide_kofi_qr">Hide support link</string>
+    <string name="qr_login_expired">Sign-in code expired. Generate a new code.</string>
+    <string name="qr_login_preparing">Preparing sign-in code…</string>
+    <string name="qr_login_start_failed">Could not start phone sign-in.</string>
+    <string name="qr_login_exchange_failed">Could not complete phone sign-in.</string>
+    <string name="trakt_login_instruction">Press Login, then enter the displayed code at the address shown on your phone.</string>
+    <string name="essential_addon_show_qr">Phone setup</string>
+    <string name="account_signin_qr_title">Sign in from your phone</string>
+    <string name="auth_signin_tv_disabled">Continue with phone sign-in using the displayed address and code.</string>
+    <string name="auth_signin_qr_btn">Continue on phone</string>
+    <string name="auth_qr_title">Sign in from your phone</string>
+    <string name="auth_qr_refresh">Refresh code</string>
+    <string name="auth_qr_generating">Generating code…</string>
+    <string name="auth_qr_unavailable">Sign-in code unavailable. Refresh to retry.</string>
+    <string name="debrid_formatter_qr_instruction">Open the displayed address on your phone to configure source settings.</string>
+    <string name="catalog_order_title">Choose Home Catalogs</string>
+    <string name="catalog_order_subtitle">Search, show or hide catalogs, and arrange your Home rows.</string>
+    <string name="addon_reorder_title">Choose catalogs</string>
+    <string name="addon_reorder_subtitle">Search catalogs and choose which rows appear on Home.</string>
+    <string name="settings_account">Account &amp; Profiles</string>
+    <string name="settings_account_section_subtitle">Manage your sign-in, sync and viewing profiles.</string>
+</resources>

@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Omnia</string>
+    <string name="cd_nuvio">Omnia</string>
+    <string name="cd_nuvio_logo">OmniaTV</string>
+    <string name="layout_selection_welcome">Omnia-তে স্বাগতম</string>
+    <string name="auth_notice_nuvio_logged_out">আপনি Omnia থেকে সাইন আউট হয়েছেন। অনুগ্রহ করে আবার সাইন ইন করুন।</string>
+    <string name="appearance_launcher_artwork_subtitle">টিভির হোম স্ক্রিনে Omnia কীভাবে দেখাবে তা বেছে নিন</string>
+    <string name="appearance_app_icon_confirmation_message">%1$s-এ পরিবর্তন করলে Omnia বন্ধ হয়ে যাবে। টিভি ব্যানার আপডেট হওয়ার আগে ডিভাইসটি রিস্টার্ট করার প্রয়োজন হতে পারে। চালিয়ে যেতে OK সিলেক্ট করুন।</string>
+    <string name="about_supporters_contributors">Omnia-কে সাপোর্ট করুন</string>
+    <string name="licenses_attributions_subtitle">Omnia-র ব্যবহৃত ডেটা প্রোভাইডার, সার্ভিস ক্রেডিট এবং Android প্লেব্যাক লাইসেন্স।</string>
+    <string name="licenses_attributions_tmdb_body">Omnia মুভি এবং টিভি মেটাডেটা, আর্টওয়ার্ক, ট্রেলার, কাস্ট, প্রোডাকশন বিবরণ, কালেকশন এবং সুপারিশের জন্য TMDB API ব্যবহার করে। এই পণ্যটি TMDB API ব্যবহার করে কিন্তু TMDB দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_trakt_body">Omnia অ্যাকাউন্ট প্রমাণীকরণ, দেখার হিস্ট্রি, অগ্রগতি সিঙ্ক, লাইব্রেরি ডেটা, রেটিং, তালিকা এবং মন্তব্যের জন্য Trakt-এর সাথে সংযোগ করে। Omnia Trakt দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_simkl_body">Omnia অ্যাকাউন্ট প্রমাণীকরণ, ওয়াচলিস্ট, দেখার হিস্ট্রি, প্লেব্যাক অগ্রগতি এবং স্ক্রবব্লিংয়ের জন্য Simkl-এর সাথে সংযোগ করে। সিনেমা, টিভি এবং অ্যানিমে ট্র্যাকিং ডেটা Simkl সরবরাহ করে। Omnia Simkl দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_premiumize_body">Omnia অ্যাকাউন্ট প্রমাণীকরণ, ক্লাউড লাইব্রেরি অ্যাক্সেস, ক্যাশে চেক এবং ক্লাউড প্লেব্যাক ফিচারের জন্য Premiumize-এর সাথে সংযোগ করে। Omnia Premiumize দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_torbox_body">Omnia অ্যাকাউন্ট প্রমাণীকরণ, ক্লাউড লাইব্রেরি অ্যাক্সেস, ক্যাশে চেক এবং ক্লাউড প্লেব্যাক ফিচারের জন্য TorBox-এর সাথে সংযোগ করে। Omnia TorBox দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_mdblist_body">Omnia রেটিং, দেখার হিস্ট্রি এবং প্লেব্যাক ট্র্যাকিংয়ের জন্য MDBList ব্যবহার করে। Omnia MDBList দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_introdb_body">Omnia স্কিপ কন্ট্রোলের মাধ্যমে ইন্ট্রো, রিক্যাপ, ক্রেডিট এবং প্রিভিউ টাইমস্ট্যাম্পের জন্য IntroDB API ব্যবহার করে। Omnia IntroDB দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_imdb_body">Omnia IMDb রেটিং এবং ভোট কাউন্টের জন্য title.ratings.tsv.gz-সহ IMDb নন-কমার্শিয়াল ডেটাসেট ব্যবহার করে। তথ্যগুলো IMDb (https://www.imdb.com)-এর সৌজন্যে প্রাপ্ত। অনুমতিক্রমে ব্যবহৃত। IMDb-র শর্ত অনুযায়ী IMDb-র ডেটা ব্যক্তিগত এবং নন-কমার্শিয়াল ব্যবহারের জন্য।</string>
+    <string name="tracking_sources_subtitle">Omnia কোথা থেকে আপনার লাইব্রেরি এবং দেখার প্রোগ্রেস পড়বে তা বেছে নিন। কানেক্ট করা প্রতিটি সার্ভিসে প্লেব্যাক স্ক্রোবল করা হয়।</string>
+    <string name="tracking_library_source_dialog_subtitle">লাইব্রেরির জন্য Omnia কোনো সার্ভিস ব্যবহার করবে তা বাছুন। প্রতিটি সংযুক্ত সার্ভিসে প্লেব্যাক স্ক্রবল হবে।</string>
+    <string name="experience_mode_choose_title">আপনার Omnia এক্সপেরিয়েন্স বেছে নিন</string>
+    <string name="advanced_nuvio_focus_scroll">Omnia ফোকাস স্ক্রোলিং</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Omnia-এর কাস্টম গ্লোবাল ফোকাস স্ক্রোল অ্যানিমেশন এবং পজিশনিং ব্যবহার করুন।</string>
+    <string name="playback_engine_exoplayer_desc">বর্তমান Omnia ফিচারের সাথে সেরা কম্প্যাটিবিলিটি।</string>
+    <string name="playback_engine_mvplayer_desc">Omnia OSD কন্ট্রোলের সাথে libmpv ব্যবহার করে। পরীক্ষামূলক।</string>
+    <string name="debrid_device_auth_instructions">On your phone, open the address below and enter this code to connect this TV.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">পুনরায় প্লেব্যাক ও দেখা চালিয়ে যাওয়ার জন্য Trakt নাকি Omnia সিঙ্ক ব্যবহার করা হবে তা বাছুন (Trakt স্ক্রবলিং সক্রিয় থাকবে)।</string>
+    <string name="trakt_watch_progress_source_nuvio">Omnia সিঙ্ক</string>
+    <string name="trakt_library_source_subtitle">Omnia আপনার লাইব্রেরির জন্য কোনো সোর্সটি পড়বে তা বাছুন</string>
+    <string name="trakt_library_source_dialog_subtitle">লাইব্রেরির জন্য Omnia কোনো সার্ভিস ব্যবহার করবে তা বাছুন। প্রতিটি সংযুক্ত সার্ভিসে প্লেব্যাক স্ক্রবল হবে</string>
+    <string name="trakt_library_source_nuvio">Omnia লাইব্রেরি</string>
+    <string name="trakt_library_source_nuvio_selected">Omnia লাইব্রেরি নির্বাচিত</string>
+    <string name="trakt_watch_progress_nuvio_selected">ওয়াচ প্রগ্রেস সোর্স Omnia Sync-এ সেট করা হয়েছে</string>
+    <string name="trakt_disconnect_subtitle">এটি Omnia থেকে আপনার Trakt অ্যাকাউন্ট সংযোগ বিচ্ছিন্ন করবে।</string>
+    <string name="profile_custom_avatar_web_panel_note">Omnia ওয়েব প্যানেল থেকে কাস্টম অ্যাভাটার ইউআরএল কনফিগার করা যাবে।</string>
+    <string name="profile_background_member_note">কাস্টম ব্যাকগ্রাউন্ড ইউআরএল Omnia ওয়েব প্যানেল থেকে কনফিগার করা যেতে পারে।</string>
+    <string name="profile_pin_overlay_forgot_hint">পিন ভুলে গেছেন? Omnia ওয়েবসাইট থেকে আপনার Omnia অ্যাকাউন্ট থেকে এটি রিসেট করুন।</string>
+    <string name="p2p_consent_body">এই স্ট্রিম পিয়ার-টু-পিয়ার (P2P) প্রযুক্তি ব্যবহার করে। P2P চালু করার মাধ্যমে আপনি স্বীকার করছেন ও সম্মত হচ্ছেন যে:
+
+• আপনার IP অ্যাড্রেস নেটওয়ার্কের অন্যান্য পিয়ারদের কাছে দৃশ্যমান হবে
+• আপনি যে কন্টেন্ট অ্যাক্সেস করছেন তার জন্য আপনি সম্পূর্ণভাবে দায়ী
+• আপনার অঞ্চলে এই কন্টেন্ট স্ট্রিম করার আইনগত অধিকার আপনার রয়েছে
+• Omnia কোনো P2P কন্টেন্ট হোস্ট, বিতরণ বা নিয়ন্ত্রণ করে না
+• P2P স্ট্রিমিং ব্যবহারের ফলে সৃষ্ট কোনো আইনি পরিণতির দায় Omnia বহন করে না
+
+আপনি সম্পূর্ণ নিজ ঝুঁকিতে এই ফিচারটি ব্যবহার করছেন। সেটিংস থেকে যেকোনো সময় P2P বন্ধ করা যাবে।</string>
+    <string name="account_sign_in_description">ডিভাইস জুড়ে আপনার লাইব্রেরি, ওয়াচ প্রগ্রেস, অ্যাডন এবং প্লাগিনগুলো সিঙ্ক করতে সাইন ইন করুন। Trakt কানেক্ট করা না থাকলে লাইব্রেরি সিঙ্ক Omnia সিঙ্ক ব্যবহার করে, এবং ওয়াচ প্রগ্রেস Trakt বা Omnia সিঙ্কের যেকোনো একটি ব্যবহার করতে পারে।</string>
+    <string name="collections_editor_tmdb_title_helper">সারি/ট্যাবের নাম হিসেবে দেখানো হয়। ফাঁকা থাকলে, Omnia সোর্স থেকে একটি তৈরি করে।</string>
+    <string name="playback_player_internal_desc">OmniaTV-এর বিল্ট-ইন প্লেয়ার ব্যবহার করুন</string>
+    <string name="simkl_sync_info_description">Omnia স্বয়ংক্রিয়ভাবে প্রতি %1$d মিনিটে একবার Simkl চেক করে। অন্য অ্যাপ বা Simkl ওয়েবসাইটের মাধ্যমে করা পরিবর্তনগুলো প্রদর্শিত হতে অনেক সময় নিতে পারে।</string>
+    <string name="simkl_sync_info_manual">Omnia-তে করা পরিবর্তনগুলো অবিলম্বে Simkl-এ পাঠানো হয়। যখনই আপনি চান Omnia রিমোট চেঞ্জগুলো দ্রুত চেক করুক, তখনই \'এখন সিঙ্ক করুন\' ব্যবহার করুন।</string>
+    <string name="about_made_with_love">Omnia for Android TV</string>
+    <string name="about_privacy_policy">Source code</string>
+    <string name="about_privacy_policy_subtitle">Omnia source and GPL license</string>
+    <string name="licenses_attributions_nuvio_title">Omnia</string>
+    <string name="support_nuvio_name">Omnia-কে সাপোর্ট করুন</string>
+    <string name="supporters_contributors_title">Omnia-কে সাপোর্ট করুন</string>
+    <string name="supporters_contributors_subtitle">যেসব মানুষ Omnia-কে সমর্থন করছেন এবং যেসব কন্ট্রিবিউটর টিভি ও মোবাইলে এটি তৈরি করছেন।</string>
+    <string name="supporters_contributors_donate_copy">Omnia ফ্রি এবং ওপেন সোর্স থাকবে। আপনি যদি প্রজেক্টটিকে সমর্থন করতে চান, তাহলে আপনি এর পেছনের সময় এবং ইনফ্রাস্ট্রাকচারের খরচ কভার করতে সাহায্য করতে পারেন।</string>
+    <string name="supporters_contributors_donate_button">Omnia-কে সাপোর্ট করুন</string>
+    <string name="supporters_contributors_qr_subtitle">Omnia-কে সাপোর্ট করতে আপনার ফোনে লিংকটি খুলুন।</string>
+    <string name="supporter_membership_title">Omnia সাপোর্টার মেম্বারশিপ</string>
+    <string name="supporter_membership_description">Omnia-কে সাপোর্ট করলে পরিকাঠামো এবং চলমান উন্নয়নের খরচ মেটাতে সাহায্য হয় এবং মূল অভিজ্ঞতা সবার জন্য বিনামূল্যে রাখা যায়।</string>
+    <string name="supporter_membership_connected_description">এই Patreon অ্যাকাউন্টে কোনো সক্রিয় Omnia স্তর পাওয়া যায়নি। উপলব্ধ বিকল্পগুলো দেখুন বা আপনার Patreon মেম্বারশিপ পরিবর্তন করার পরে রিফ্রেশ করুন।</string>
+    <string name="supporters_since">%1$s থেকে Omnia-কে সমর্থন করছেন</string>
+    <string name="supporters_since_unknown">গর্বের সাথে Omnia-কে সমর্থন করছেন</string>
+    <string name="sponsors_detail_copy">স্পন্সররা ডেভেলপমেন্টের বিভিন্ন অংশে সাপোর্টের মাধ্যমে Omnia-কে এগিয়ে নিতে সাহায্য করেন।</string>
+    <string name="library_source_nuvio">OMNIA</string>
+    <string name="custom_server_error_official_active">Omnia account service অফিসিয়াল সার্ভার এবং ইতিমধ্যেই নির্বাচিত।</string>
+    <string name="custom_server_error_official_available">Omnia account service হল অফিসিয়াল সার্ভার। এই ডায়ালগটি বন্ধ করুন এবং ফিরে যেতে অফিসিয়াল সার্ভার ব্যবহার করুন বাছুন।</string>
+    <string name="collections_file_description">Reads your compatible collection file from the Downloads folder.</string>
+    <string name="addon_manage_from_phone_subtitle">Manage add-ons in Omnia on your phone using the same account and profile.</string>
+    <string name="addon_manage_addons_only_from_phone_subtitle">Install or remove add-ons in the Omnia phone app.</string>
+    <string name="addon_manage_collections_from_phone_subtitle">Manage collections from your phone using the address shown.</string>
+    <string name="addon_qr_scan_instruction">Open Omnia on your phone → Settings → Catalogs &amp; add-ons. Use the same account and profile, then Refresh Add-ons on this TV. For device-specific changes, open the address below on the same Wi-Fi and keep this screen open.</string>
+    <string name="addon_qr_addons_only_scan_instruction">Manage add-ons in the Omnia phone app using the same account and profile, then Refresh Add-ons on this TV. The address below is an alternative on the same Wi-Fi.</string>
+    <string name="addon_qr_collections_scan_instruction">Manage collections using the address below in your phone browser on the same Wi-Fi. Keep this screen open.</string>
+    <string name="custom_poster_qr_instruction">Open the address below in your phone browser to change this TV\'s poster settings. Use the same Wi-Fi and keep this screen open.</string>
+    <string name="stream_badge_qr_instruction">Open the address below in your phone browser to change this TV\'s badge settings. Use the same Wi-Fi and keep this screen open.</string>
+    <string name="plugin_qr_instruction">Manage repositories in Omnia on your phone where supported, or open the address below on the same Wi-Fi. Keep this screen open for local changes.</string>
+    <string name="plugin_manage_from_phone_subtitle">Manage repositories from your phone using the displayed address.</string>
+    <string name="mdblist_awaiting_instruction">On your phone, enter this code at the address below.</string>
+    <string name="auth_qr_scan_instruction">Enter the short code at the address below in your phone browser.</string>
+    <string name="account_signin_qr_subtitle">Use the displayed address and code to sign in from your phone.</string>
+    <string name="qr_login_scan_prompt">Open the address and sign in on your phone</string>
+    <string name="supporters_contributors_qr_title">Open on your phone</string>
+    <string name="account_error_qr_login_expired">Sign-in code expired. Please try again.</string>
+    <string name="account_error_invalid_qr_login">Invalid sign-in code.</string>
+    <string name="account_error_qr_login_other_device">This sign-in code belongs to another device.</string>
+    <string name="account_error_qr_login_outdated">Device sign-in is unavailable. Please try again later.</string>
+    <string name="account_error_qr_login_missing_setup">Device sign-in is unavailable. Please try again later.</string>
+    <string name="account_error_qr_login_misconfigured">Device sign-in is unavailable. Please try again later.</string>
+    <string name="account_error_qr_login_invalid_request">Sign-in request was invalid. Please retry.</string>
+    <string name="supporters_contributors_qr_hint">Open the address on your phone or use the button below.</string>
+    <string name="contributors_show_kofi_qr">Show support link</string>
+    <string name="contributors_hide_kofi_qr">Hide support link</string>
+    <string name="qr_login_expired">Sign-in code expired. Generate a new code.</string>
+    <string name="qr_login_preparing">Preparing sign-in code…</string>
+    <string name="qr_login_start_failed">Could not start phone sign-in.</string>
+    <string name="qr_login_exchange_failed">Could not complete phone sign-in.</string>
+    <string name="trakt_login_instruction">Press Login, then enter the displayed code at the address shown on your phone.</string>
+    <string name="essential_addon_show_qr">Phone setup</string>
+    <string name="account_signin_qr_title">Sign in from your phone</string>
+    <string name="auth_signin_tv_disabled">Continue with phone sign-in using the displayed address and code.</string>
+    <string name="auth_signin_qr_btn">Continue on phone</string>
+    <string name="auth_qr_title">Sign in from your phone</string>
+    <string name="auth_qr_refresh">Refresh code</string>
+    <string name="auth_qr_generating">Generating code…</string>
+    <string name="auth_qr_unavailable">Sign-in code unavailable. Refresh to retry.</string>
+    <string name="debrid_formatter_qr_instruction">Open the displayed address on your phone to configure source settings.</string>
+    <string name="catalog_order_title">Choose Home Catalogs</string>
+    <string name="catalog_order_subtitle">Search, show or hide catalogs, and arrange your Home rows.</string>
+    <string name="addon_reorder_title">Choose catalogs</string>
+    <string name="addon_reorder_subtitle">Search catalogs and choose which rows appear on Home.</string>
+    <string name="settings_account">Account &amp; Profiles</string>
+    <string name="settings_account_section_subtitle">Manage your sign-in, sync and viewing profiles.</string>
+</resources>

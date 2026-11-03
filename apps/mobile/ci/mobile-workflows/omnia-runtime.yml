@@ -1,0 +1,225 @@
+name: Omnia runtime checks
+on:
+  push:
+    paths: ['.github/workflows/omnia-runtime.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          run-id: 41228190336
+          github-token: ${{ github.token }}
+          path: candidate
+          merge-multiple: true
+      - name: Enable hardware acceleration
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Prepare UI smoke checks
+        run: |
+          cat > smoke.py <<'PY'
+          import json, re, subprocess, time, xml.etree.ElementTree as ET
+          from pathlib import Path
+          out=Path('runtime-evidence'); out.mkdir(exist_ok=True)
+          def adb(*args):
+              return subprocess.check_output(['adb',*args],timeout=40).decode(errors='replace')
+          def capture(name):
+              subprocess.run(['adb','shell','uiautomator','dump','/sdcard/window.xml'],timeout=30,check=True,stdout=subprocess.DEVNULL)
+              xml=adb('shell','cat','/sdcard/window.xml')
+              (out/(name+'.xml')).write_text(xml)
+              (out/(name+'.png')).write_bytes(subprocess.check_output(['adb','exec-out','screencap','-p'],timeout=30))
+              return ET.fromstring(xml)
+          def click(root,labels):
+              for label in labels:
+                  for node in root.iter('node'):
+                      values=[node.get('text','').strip(),node.get('content-desc','').strip()]
+                      if label.lower() not in [v.lower() for v in values]: continue
+                      bounds=list(map(int,re.findall(r'\d+',node.get('bounds',''))))
+                      if len(bounds)==4:
+                          adb('shell','input','tap',str((bounds[0]+bounds[2])//2),str((bounds[1]+bounds[3])//2));time.sleep(2);return True
+              return False
+          def tap_node(node):
+              b=list(map(int,re.findall(r'\d+',node.get('bounds',''))))
+              assert len(b)==4
+              adb('shell','input','tap',str((b[0]+b[2])//2),str((b[1]+b[3])//2));time.sleep(1)
+          def tap_label(root,label):
+              for n in root.iter('node'):
+                  if n.get('text','')==label or n.get('content-desc','')==label:
+                      tap_node(n);return True
+              return False
+          def search_catalog(root):
+              fields=[n for n in root.iter('node') if n.get('class')=='android.widget.EditText']
+              assert fields,'Catalog search field missing'
+              tap_node(fields[0]);adb('shell','input','text','QA%s08')
+              adb('shell','input','keyevent','4');time.sleep(2)
+              return capture('catalog-search-result')
+          package='io.github.workedword.omnia.debug'
+          assert adb('shell','pidof',package).strip(), 'App process did not stay running'
+          root=capture('01-launch')
+          if click(root,['Continue Without Account']):
+              time.sleep(12)
+              root=capture('01-guest-home')
+          if click(root,['Guest']):
+              time.sleep(12)
+              root=capture('01-selected-profile')
+          def find_click(labels, name):
+              for attempt in range(6):
+                  tree=capture(name+'-'+str(attempt))
+                  if click(tree,labels): return True
+                  scrolls=[n for n in tree.iter('node') if n.get('scrollable')=='true']
+                  if not scrolls: return False
+                  bounds=list(map(int,re.findall(r'\d+',scrolls[0].get('bounds',''))))
+                  if len(bounds)!=4: return False
+                  left,top,right,bottom=bounds
+                  adb('shell','input','swipe',str((left+right)//2),str(top+(bottom-top)*4//5),str((left+right)//2),str(top+(bottom-top)//4),'350')
+                  time.sleep(1)
+              return False
+          report={'launch':'passed','settings':'not reached','advanced':'not reached'}
+          if click(root,['Settings']):
+              root=capture('02-settings');report['settings']='opened'
+              if find_click(['Advanced'],'advanced-search'):
+                  root=capture('03-advanced');report['advanced']='opened'
+                  text=' '.join(n.get('text','') for n in root.iter('node'))
+                  assert 'DV diagnostics' not in text and 'Debug settings' not in text,text
+                  assert 'Crash reports' not in text and 'Diagnostics' not in text,text
+                  initial=[n.get('checked') for n in root.iter('node') if n.get('checkable')=='true']
+                  assert click(root,['Remember Last Profile'])
+                  root=capture('03-profile-toggle')
+                  changed=[n.get('checked') for n in root.iter('node') if n.get('checkable')=='true']
+                  assert initial and changed!=initial, 'Startup switch did not change'
+                  assert click(root,['Remember Last Profile'])
+                  root=capture('03-profile-restored')
+                  assert [n.get('checked') for n in root.iter('node') if n.get('checkable')=='true']==initial
+                  report['startupToggle']='passed'
+                  if click(root,['Clear Continue Watching Cache']):
+                      root=capture('03-cache-cleared')
+                      assert any(n.get('text','')=='Cache cleared' for n in root.iter('node')), 'Cache action did not report completion'
+                      report['cacheAction']='passed'
+                  adb('shell','input','keyevent','4');time.sleep(2)
+              for _ in range(4):
+                  adb('shell','input','swipe','320','350','320','1000','300')
+              root=capture('04-settings-return')
+              if find_click(['Integrations','Providers & tracking'],'integrations-search'):
+                  root=capture('05-integrations')
+                  if click(root,['Connected services','Playback providers']):
+                      root=capture('06-providers')
+                      assert not any(n.get('text','').lower()=='formatting' for n in root.iter('node'))
+          assert report['settings']=='opened', 'Could not enter settings after guest onboarding'
+          # Public fixture manifests contain no account data or real streaming providers.
+          for number in range(1,9):
+              uri=f'nuvio://omnia.161.97.128.244.sslip.io/downloads/qa-regression/{number}/manifest.json'
+              adb('shell','am','start','-a','android.intent.action.VIEW','-d',uri,'-p',package)
+              adb('shell','am','start','-a','android.intent.action.VIEW','-d',uri,'-p',package)
+              time.sleep(3)
+          root=capture('07-addons-installed')
+          seen=set()
+          for attempt in range(20):
+              root=capture('08-addons-scroll-'+str(attempt))
+              visible=[n.get('text','') for n in root.iter('node') if re.fullmatch(r'Omnia QA \d{2}',n.get('text',''))]
+              assert len(visible)==len(set(visible)), 'Repeated install produced duplicate add-on cards'
+              seen.update(n.get('text','') for n in root.iter('node') if n.get('text','').startswith('Omnia QA '))
+              if 'Omnia QA 08' in seen: break
+              adb('shell','input','swipe','350','1050','350','350','400');time.sleep(0.5)
+          report['addonScrollSeen']=sorted(seen)
+          assert 'Omnia QA 08' in seen, 'Touch scrolling could not reach last installed add-on'
+          report['addonScroll']='passed'
+          adb('shell','am','force-stop',package)
+          adb('shell','am','start','-n',package+'/com.nuvio.app.MainActivity')
+          time.sleep(10);root=capture('catalog-home')
+          assert click(root,['Settings'])
+          assert find_click(['Account & Profiles'],'merged-account-search')
+          root=capture('account-profiles')
+          assert find_click(['Switch Profile'],'account-profile-action'), 'Profile action missing from Account & Profiles'
+          root=capture('profile-picker')
+          assert click(root,['Guest']), 'Profile picker did not open'
+          time.sleep(8)
+          adb('shell','am','force-stop',package)
+          adb('shell','am','start','-n',package+'/com.nuvio.app.MainActivity')
+          time.sleep(12);root=capture('after-profile-return')
+          if click(root,['Guest']): time.sleep(5);root=capture('after-profile-selected')
+          assert click(root,['Settings'])
+          report['mergedAccountProfiles']='passed'
+          assert find_click(['Content & Discovery'],'catalog-content-search')
+          assert find_click(['Choose catalogs'],'catalog-direct-search')
+          assert find_click(['Search catalogs or providers'],'catalog-search-field')
+          root=capture('catalog-search-ready')
+          root=search_catalog(root)
+          # Bring the filtered catalog row and its switch into view.
+          for attempt in range(5):
+              root=capture('catalog-result-'+str(attempt))
+              if any(n.get('text','')=='Omnia QA 08' and int(re.findall(r'\d+',n.get('bounds',''))[-1]) < 1100 for n in root.iter('node')): break
+              adb('shell','input','swipe','350','1000','350','500','350');time.sleep(1)
+          assert any(n.get('text','')=='Omnia QA 08' for n in root.iter('node'))
+          assert not any(n.get('text','')=='Omnia QA 01' for n in root.iter('node'))
+          switches=[n for n in root.iter('node') if n.get('checkable')=='true' and not any(c.get('class')=='android.widget.CheckBox' for c in n.iter('node'))]
+          assert switches,'Catalog switch missing'
+          tap_node(switches[-1]);root=capture('catalog-disabled')
+          assert find_click(['Hidden'],'catalog-hidden-filter')
+          root=capture('catalog-hidden')
+          assert any(n.get('text','')=='Omnia QA 08' for n in root.iter('node'))
+          assert click(root,['Shown'])
+          root=capture('catalog-shown-empty')
+          assert any(n.get('text','')=='No catalogs match these filters.' for n in root.iter('node'))
+          assert click(root,['Hidden'])
+          root=capture('catalog-restore')
+          switches=[n for n in root.iter('node') if n.get('checkable')=='true' and not any(c.get('class')=='android.widget.CheckBox' for c in n.iter('node'))]
+          assert switches
+          tap_node(switches[-1]);root=capture('catalog-hidden-empty')
+          assert any(n.get('text','')=='No catalogs match these filters.' for n in root.iter('node'))
+          assert click(root,['Clear filters'])
+          capture('catalog-filters-cleared')
+          report['catalogSearchAndVisibility']='passed'
+          adb('shell','am','start','-a','android.intent.action.VIEW','-d','nuvio://detail/movie/omniaqa%3Atest','-p',package)
+          time.sleep(5);root=capture('10-playback-details')
+          if any(n.get('text','')=='Omnia playback check' for n in root.iter('node')):
+              assert click(root,['Omnia playback check'])
+              time.sleep(3);root=capture('10-playback-card-details')
+          assert click(root,['Play','Watch now','Watch']), 'Could not start QA movie'
+          root=capture('11-playback-sources')
+          click(root,['Local test clip','Omnia QA'])
+          root=capture('12-playback-selected')
+          if any(n.get('text','')=='ExoPlayer' for n in root.iter('node')):
+              click(root,['ExoPlayer'])
+          sessions=''
+          for attempt in range(10):
+              sessions=adb('shell','dumpsys','media_session')
+              if package in sessions and re.search(r'state=3[, }]',sessions): break
+              time.sleep(1)
+          (out/'playback-session.txt').write_text(sessions)
+          capture('13-playback-running')
+          report['testClipPlayback']='playing' if package in sessions and re.search(r'state=3[, }]',sessions) else 'not confirmed'
+          assert report['testClipPlayback']=='playing', 'QA clip did not enter playing state'
+          crash=adb('logcat','-d','-b','crash')
+          (out/'crash.log').write_text(crash)
+          assert 'Process: '+package not in crash, 'App crash recorded'
+          (out/'report.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report))
+          PY
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: default
+          arch: x86_64
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          script: |
+            adb install $(find candidate -name '*.apk' -print -quit)
+            adb shell wm size 720x1280
+            adb shell wm density 240
+            adb logcat -c
+            adb shell am start -W -n io.github.workedword.omnia.debug/com.nuvio.app.MainActivity
+            sleep 25
+            python3 smoke.py
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: omnia-runtime-evidence
+          path: runtime-evidence/
+          retention-days: 7

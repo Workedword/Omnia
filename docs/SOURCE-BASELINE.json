@@ -1,0 +1,17 @@
+{
+  "tv": {
+    "version": "0.3.25",
+    "archive": "https://github.com/Workedword/Omnia/releases/download/v0.3.25%2Btv/Omnia-TV-0.3.25-source.zip",
+    "sha256": "7626877417e6a88b734e0d540a557bd38629300c011d5877120d55f57c6d39f5"
+  },
+  "android": {
+    "version": "0.4.24",
+    "archive": "https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bandroid/Omnia-Mobile-0.4.24-source.zip",
+    "sha256": "eda61c4d66ed3d495f59a06f19a79b2338578864d932d05dfa789c1c276822db"
+  },
+  "ios": {
+    "version": "0.4.24",
+    "archive": "https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24-source.zip",
+    "sha256": "525562dafa3cc1016d0565103b4f700f748aac6b435b74e9bf1b5b583d040c72"
+  }
+}

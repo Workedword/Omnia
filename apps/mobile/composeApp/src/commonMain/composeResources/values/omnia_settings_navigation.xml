@@ -1,0 +1,5 @@
+<resources>
+    <string name="omnia_current_addons">Current Add-ons</string>
+    <string name="omnia_discover_addons">Discover Add-ons</string>
+    <string name="omnia_sync_addons">Sync Add-ons</string>
+</resources>

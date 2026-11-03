@@ -1,0 +1,73 @@
+name: Omnia iOS sideload build
+on:
+  workflow_dispatch:
+  push:
+    branches: [omnia/mobile]
+    paths:
+      - prepare_omnia_ios.py
+      - .github/workflows/ios-test-build.yml
+permissions:
+  contents: read
+concurrency:
+  group: omnia-ios-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: xcode-27
+    timeout-minutes: 75
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_27.1.app/Contents/Developer
+      IOS_CONFIGURATION: Release
+      GRADLE_OPTS: -Dfile.encoding=UTF-8
+      KOTLIN_DAEMON_JVMARGS: -Xmx1536M
+      NUVIO_GRADLE_JVMARGS: -Xmx4096M -Dfile.encoding=UTF-8 -XX:MaxMetaspaceSize=768M
+      NUVIO_KOTLIN_NATIVE_JVMARGS: -Xmx4096M
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: gradle/actions/setup-gradle@v6
+      - uses: actions/cache@v5
+        with:
+          path: ~/.konan
+          key: omnia-konaan-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('gradle/libs.versions.toml') }}
+      - name: Apply Omnia shared and iOS configuration
+        run: |
+          python3 -m pip install Pillow==11.3.0
+          python3 prepare_omnia.py
+          python3 prepare_omnia_ios.py
+          plutil -lint iosApp/iosApp/Info.plist iosApp/iosApp.xcodeproj/project.pbxproj
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+      - name: Prepare pinned playback dependencies
+        run: ./scripts/prepare-ios-dependencies.sh
+      - name: Build and verify unsigned arm64 IPA
+        run: |
+          set -o pipefail
+          ./scripts/build-ios-ipa.sh 2>&1 | tee omnia-ios-build.log
+      - name: Verify Omnia application identity
+        run: |
+          app=build/ios-derived-full-release/Build/Products/Release-iphoneos/Omnia.app
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$app/Info.plist")" = io.github.workedword.omnia
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleDisplayName' "$app/Info.plist")" = Omnia
+          shasum -a 256 build/ios-ipa/*.ipa > build/ios-ipa/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v7
+        with:
+          name: Omnia-iOS-unsigned
+          path: build/ios-ipa/*
+          if-no-files-found: error
+          retention-days: 7
+      - name: Save build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Omnia-iOS-build-diagnostics
+          path: |
+            omnia-ios-build.log
+            iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/app-icon-1024.png
+          retention-days: 7

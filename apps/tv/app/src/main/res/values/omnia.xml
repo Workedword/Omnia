@@ -1,0 +1,16 @@
+<resources>
+    <string name="omnia_server_button">Connect server</string>
+    <string name="omnia_server_connected_button">Server settings</string>
+    <string name="omnia_local_title">Ready to make it yours</string>
+    <string name="omnia_local_description">Start on this TV with your own media sources. Connect your Omnia server when you want to sync profiles, your library and watch progress across devices.</string>
+    <string name="omnia_local_continue">Use on this TV</string>
+    <string name="omnia_connect_server_error">Connect your server before signing in.</string>
+    <string name="omnia_account_privacy_hint">Your account and synced data are stored on the server you connect.</string>
+    <string name="omnia_default_server_action">Reset server connection</string>
+    <string name="omnia_default_server_title">Reset server connection?</string>
+    <string name="omnia_default_server_description">You will be signed out and the app will restart with its original configuration. You can continue using this TV without an account.</string>
+    <string name="omnia_subtitle_providers">Subtitle providers</string>
+    <string name="omnia_subtitle_provider_description">OpenSubtitles v3 supplies external subtitles for movies and episodes. Install it here, then choose a subtitle from the player. Other subtitle add-ons can be added using their manifest URL above.</string>
+    <string name="omnia_install_subtitles">Enable OpenSubtitles v3</string>
+    <string name="omnia_subtitles_installed">OpenSubtitles v3 enabled</string>
+</resources>

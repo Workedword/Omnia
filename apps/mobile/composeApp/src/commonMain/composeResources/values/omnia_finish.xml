@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="collections_editor_hide_source_rows">Hide source catalog rows from Home</string>
+    <string name="collections_editor_hide_source_rows_desc">Keep these catalogs inside this Collection and hide their separate Home rows. Turn this off, hide or delete the Collection to restore those rows. Your catalog visibility choices are kept.</string>
+    <string name="omnia_reset_title">Restore default settings</string>
+    <string name="omnia_reset_description">Restore this profile’s display, playback and Home preferences.</string>
+    <string name="omnia_reset_confirmation">Reset this profile’s display, playback and Home preferences to their defaults? Your login, profiles, watch history, library, add-ons, Collections and service credentials will be kept. Language and other profiles’ preferences will be kept.</string>
+    <string name="omnia_reset_confirm">Reset preferences</string>
+    <string name="omnia_reset_cancel">Cancel</string>
+    <string name="omnia_reset_progress">Resetting preferences…</string>
+    <string name="omnia_reset_done">Preferences reset. Your account and media data were kept.</string>
+    <string name="omnia_reset_failed">Some preferences could not be reset. Please retry.</string>
+</resources>

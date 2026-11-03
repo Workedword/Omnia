@@ -1,0 +1,8 @@
+<resources>
+    <string name="omnia_addon_sync_action">Sync add-ons</string>
+    <string name="omnia_addon_sync_idle">Sync installed add-ons and their order for this profile.</string>
+    <string name="omnia_addon_sync_busy">Syncing add-ons…</string>
+    <string name="omnia_addon_sync_done">Add-ons synced successfully.</string>
+    <string name="omnia_addon_sync_error">Could not sync add-ons. Your saved list is kept. Check your connection and try again.</string>
+    <string name="omnia_addon_sync_signin">Sign in to sync add-ons across your devices.</string>
+</resources>

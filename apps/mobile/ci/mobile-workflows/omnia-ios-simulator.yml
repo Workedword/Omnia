@@ -1,0 +1,95 @@
+name: Omnia iPhone simulator checks
+on:
+  workflow_dispatch:
+  push:
+    branches: [omnia/mobile]
+    paths:
+      - prepare_omnia_ios.py
+      - prepare_omnia_ios_tests.py
+      - .github/workflows/omnia-ios-simulator.yml
+permissions:
+  contents: read
+concurrency:
+  group: omnia-ios-simulator-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: xcode-27
+    timeout-minutes: 75
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_27.1.app/Contents/Developer
+      IOS_CONFIGURATION: Release
+      GRADLE_OPTS: -Dfile.encoding=UTF-8
+      KOTLIN_DAEMON_JVMARGS: -Xmx1536M
+      NUVIO_GRADLE_JVMARGS: -Xmx4096M -Dfile.encoding=UTF-8 -XX:MaxMetaspaceSize=768M
+      NUVIO_KOTLIN_NATIVE_JVMARGS: -Xmx4096M
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: gradle/actions/setup-gradle@v6
+      - uses: actions/cache@v5
+        with:
+          path: ~/.konan
+          key: omnia-konaan-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('gradle/libs.versions.toml') }}
+      - name: Apply Omnia shared and iOS configuration
+        run: |
+          python3 -m pip install Pillow==11.3.0
+          python3 prepare_omnia.py
+          python3 prepare_omnia_ios.py
+          plutil -lint iosApp/iosApp/Info.plist iosApp/iosApp.xcodeproj/project.pbxproj
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+      - name: Prepare pinned playback dependencies
+        run: ./scripts/prepare-ios-dependencies.sh
+      - name: Prepare UI test target and iPhone
+        run: |
+          gem install xcodeproj -v 1.27.0 --no-document
+          python3 prepare_omnia_ios_tests.py
+          xcrun simctl list devices available -j > simulator-devices.json
+          python3 - <<'PY'
+          import json, os
+          devices = json.load(open('simulator-devices.json'))['devices']
+          phones = [d for runtime, entries in devices.items() if 'iOS' in runtime for d in entries if d['isAvailable'] and 'iPhone' in d['name']]
+          assert phones, 'No available iPhone simulator'
+          device = phones[0]
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write('OMNIA_SIMULATOR=' + device['udid'] + '\n')
+          print('Selected iPhone simulator:', device['name'])
+          PY
+      - name: Run iPhone UI checks
+        env:
+          NUVIO_IOS_DISTRIBUTION: full
+        run: |
+          set -o pipefail
+          xcrun simctl boot "$OMNIA_SIMULATOR" || true
+          xcrun simctl bootstatus "$OMNIA_SIMULATOR" -b
+          env "ORG_GRADLE_PROJECT_org.gradle.jvmargs=$NUVIO_GRADLE_JVMARGS" \
+            "ORG_GRADLE_PROJECT_kotlin.native.jvmArgs=$NUVIO_KOTLIN_NATIVE_JVMARGS" \
+            xcodebuild -project iosApp/iosApp.xcodeproj -scheme OmniaUITests \
+            -configuration Debug -destination "platform=iOS Simulator,id=$OMNIA_SIMULATOR" \
+            -derivedDataPath build/ios-simulator -resultBundlePath build/OmniaUITests.xcresult \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= \
+            test 2>&1 | tee omnia-ios-simulator.log
+      - name: Save simulator evidence
+        if: always()
+        run: |
+          mkdir -p build/simulator-evidence
+          xcrun simctl io "$OMNIA_SIMULATOR" screenshot build/simulator-evidence/final.png || true
+          xcrun simctl spawn "$OMNIA_SIMULATOR" log show --last 10m --style compact --predicate 'process == "Omnia"' > build/simulator-evidence/app.log || true
+          xcrun xcresulttool export attachments --path build/OmniaUITests.xcresult --output-path build/simulator-evidence/attachments || true
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: Omnia-iOS-simulator-evidence
+          path: |
+            build/OmniaUITests.xcresult
+            build/simulator-evidence
+            omnia-ios-simulator.log
+            simulator-devices.json
+          retention-days: 7

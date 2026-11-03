@@ -1,0 +1,33 @@
+name: Omnia Android
+on:
+  push:
+    branches: [omnia/mobile]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: omnia-mobile-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v6
+      - name: Apply Omnia product configuration
+        run: python3 prepare_omnia.py
+      - name: Build full phone app
+        run: ./gradlew :androidApp:assembleFullDebug -Pnuvio.android.distribution=full -Pnuvio.ios.distribution=appstore -Dorg.gradle.jvmargs="-Xmx5g -Dfile.encoding=UTF-8" -Pkotlin.compiler.execution.strategy=in-process --max-workers=2 --stacktrace
+      - name: Verify updater, catalog and library behavior
+        run: ./gradlew :composeApp:testAndroidHostTest --tests '*AppUpdaterRepositoryTest' --tests '*AppUpdaterControllerTest' --tests '*OmniaStartupBufferTest' --tests '*CatalogPaginationStateTest' --tests '*LibrarySyncReconcilerTest' --tests '*SettingsNavigationTest' --tests '*HomeCatalogSettingsRepositoryTest' --tests '*AppIconRepositoryTest' --tests '*OmniaLibraryFeaturesTest' --tests '*OmniaAddonHealthTest' --tests '*LibraryDisplaySettingsTest' --tests '*LibraryCatalogStateTest' --tests '*EpisodeReleaseDateParserTest' --tests '*HomeHeroSectionTest' --tests '*HomeScreenTest' -Pnuvio.android.distribution=full -Pnuvio.ios.distribution=appstore -Dorg.gradle.jvmargs="-Xmx5g -Dfile.encoding=UTF-8" -Pkotlin.compiler.execution.strategy=in-process --max-workers=2 --stacktrace
+      - uses: actions/upload-artifact@v7
+        with:
+          name: Omnia-Mobile-0.4.3-universal.apk
+          path: androidApp/build/outputs/apk/full/debug/androidApp-full-debug.apk
+          archive: false
+          if-no-files-found: error
+          retention-days: 7

@@ -11,7 +11,7 @@ Made for the big screen. Ready for your phone.
 [![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bandroid/Omnia-Mobile-0.4.24.apk)
 [![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24.ipa)
 
-[Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
+[Developers](#build-with-us) · [Contribute](CONTRIBUTING.md) · [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
 
 </div>
 
@@ -142,3 +142,20 @@ Please keep passwords, verification codes and private provider keys out of suppo
 [Platform guide](PLATFORMS.md) · [Releases](https://github.com/Workedword/Omnia/releases) · [Privacy](OMNIA-PRIVACY.md) · [Notices](OMNIA-NOTICES.md)
 
 </div>
+
+## Build with us
+
+Omnia welcomes bug fixes, accessible interface improvements, translations, tests and documentation. Start with the platform you use, then open a focused pull request.
+
+| Area | Source | Start here |
+| --- | --- | --- |
+| Fire TV / Android TV | [`apps/tv`](apps/tv) | [TV build guide](docs/BUILD-TV.md) |
+| Android and iOS | [`apps/mobile`](apps/mobile) | [Mobile build guide](docs/BUILD-MOBILE.md) |
+| Community add-ons | [`addons`](addons) | [Add-on directory](addons/README.md) |
+| Developer documentation | [`docs`](docs) | [Project structure](docs/PROJECT-STRUCTURE.md) |
+
+The source baseline is TV **0.3.25** and shared mobile **0.4.24**. The exact iOS release inputs and instructions are also available in the [iOS 0.4.24 source archive](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24-source.zip). Each client keeps its own Gradle project and platform settings.
+
+[Contributing](CONTRIBUTING.md) · [Security reports](SECURITY.md) · [Project structure](docs/PROJECT-STRUCTURE.md) · [License and notices](OMNIA-NOTICES.md)
+
+Download a release to use Omnia, or clone this repository to help develop it. Account and Discord services are operated separately; production access is not needed to contribute to the clients.
