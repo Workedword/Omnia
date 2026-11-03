@@ -26,9 +26,9 @@ Create an Omnia account with your email and a password, then use that account on
 
 ## Catalogs & add-ons
 
-On TV 0.3.24, Android 0.4.23 and iOS 0.4.23 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
+On TV 0.3.25, Android 0.4.24 and iOS 0.4.24 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
 
-iOS 0.4.23 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
+iOS 0.4.24 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
 
 Select a category, open a provider's setup page, and install its configured manifest when required.
 
