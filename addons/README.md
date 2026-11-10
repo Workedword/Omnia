@@ -39,7 +39,7 @@ Independent projects are optional. Their developers maintain availability, accou
 | [IPTV](https://ip-tv.hatip.dev/configure) | Channel catalogs | Choose countries and install the generated manifest. |
 | [Nuvio Sports](https://nuviosports.xyz/configure) | Live sports | Use the developer’s configuration page. |
 | [PenguPlay](https://pengu.uk/) | Provider service | Follow its developer’s account and setup requirements. |
-| [Sports Replays](https://sports-replay.michaelrobgrove.workers.dev/configure) | Sports replays | Previously unreachable; availability and playback unverified. |
+| [Sports Replays](https://sports-replay.michaelrobgrove.workers.dev/configure) | Sports replays | Setup reachable as of November 10, 2026; configure through the provider. Playback remains unverified. |
 | [CNCVerse Bridge](https://cncverse.dpdns.org/) | Provider bridge | Configure your own movie, show, Indian-language, live TV and sports profile. Keep its generated manifest private. Playback unverified. |
 | [StreamRadar India](https://streamradar.bricksgenius.com/configure) | Indian OTT catalogs | Choose services, their order, Trending, Just In, Coming Soon, and poster style. No account required. Public manifest checked; playback unverified. |
 
@@ -62,3 +62,12 @@ Useful integration formats include HTTPS JSON manifests for catalogs, metadata, 
 Only share content and services you are authorized to distribute. Required third-party notices remain with their respective projects.
 
 
+
+## Refresh your add-ons
+
+- **Android and iOS:** Settings → Add-ons → Discover Add-ons → Refresh reloads available listings.
+- **TV:** reopen Discover Add-ons to fetch the current directory. An always-visible Refresh control is being prepared for the next TV update.
+- **Installed add-ons:** Settings → Add-ons → Sync Add-ons refreshes the current profile’s installed list across devices. Script Providers use their repository update controls.
+- **Web directory:** use Refresh add-ons on the [community page](https://omnia.161.97.128.244.sslip.io/community#community). It keeps your current catalog selections.
+
+Directory links were checked on November 10, 2026. A reachable setup page or valid manifest does not establish playback availability. Personal provider keys and configured manifest links stay private.
