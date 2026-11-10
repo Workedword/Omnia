@@ -66,7 +66,7 @@ Only share content and services you are authorized to distribute. Required third
 ## Refresh your add-ons
 
 - **Android and iOS:** Settings → Add-ons → Discover Add-ons → Refresh reloads available listings.
-- **TV:** reopen Discover Add-ons to fetch the current directory. An always-visible Refresh control is being prepared for the next TV update.
+- **TV 0.3.26 and later:** Settings → Add-ons → Discover Add-ons → Refresh reloads available listings. Earlier versions can reopen Discover Add-ons, then use Settings → About → Check for updates.
 - **Installed add-ons:** Settings → Add-ons → Sync Add-ons refreshes the current profile’s installed list across devices. Script Providers use their repository update controls.
 - **Web directory:** use Refresh add-ons on the [community page](https://omnia.161.97.128.244.sslip.io/community#community). It keeps your current catalog selections.
 
