@@ -16,6 +16,8 @@ Requires Android 7.0 or later on Android TV or an Android-based Fire TV device. 
 
 Requires Android 7.0 or later. Install the Android APK for the phone and tablet interface, including browsing, library, account settings, compatible add-ons, and playback.
 
+Android 0.4.25 adds Home catalog groups and layout preview, Watched History in Library, a setup Guide, and an Essentials/Advanced settings choice. Advanced is selected by default and keeps the existing applicable controls.
+
 ## iPhone
 
 Enjoy Omnia’s mobile interface on iPhone with iOS 16.1 or later. Download the IPA, then sign and install it with your Apple account through a sideloading tool. This is a beta; feature support and performance can vary. Apple silicon Mac compatibility is experimental, and the download remains an iPhone IPA.
@@ -26,7 +28,7 @@ Create an Omnia account with your email and a password, then use that account on
 
 ## Catalogs & add-ons
 
-On TV 0.3.26, Android 0.4.24 and iOS 0.4.24 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
+On TV 0.3.26, Android 0.4.25 and iOS 0.4.24 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
 
 iOS 0.4.24 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
 
