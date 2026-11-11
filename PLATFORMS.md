@@ -20,7 +20,7 @@ Android 0.4.25 adds Home catalog groups and layout preview, Watched History in L
 
 ## iPhone
 
-Enjoy Omnia’s mobile interface on iPhone with iOS 16.1 or later. Download the IPA, then sign and install it with your Apple account through a sideloading tool. This is a beta; feature support and performance can vary. Apple silicon Mac compatibility is experimental, and the download remains an iPhone IPA.
+Enjoy Omnia’s mobile interface on iPhone with iOS 16.1 or later. Download the IPA, then sign and install it with your Apple account through a sideloading tool. The current iOS 0.4.25 beta includes Home catalog groups and layout preview, Watched History, Guide, and the mobile Essentials/Advanced settings choice. This is a beta; feature support and performance can vary. Apple silicon Mac compatibility is experimental, and the download remains an iPhone IPA.
 
 ## Your account
 
@@ -28,13 +28,15 @@ Create an Omnia account with your email and a password, then use that account on
 
 ## Catalogs & add-ons
 
-On TV 0.3.26, Android 0.4.25 and iOS 0.4.24 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
+On TV 0.3.27, Android 0.4.25 and iOS 0.4.25 Beta, open **Settings → Add-ons** for four separate destinations: **Current Add-ons**, **Discover Add-ons**, **Sync Add-ons** and **Script Providers**. Browse **Omnia Official** and **Community** sources; already-installed HTTP add-ons stay in Current Add-ons and leave the available list. Home catalog choices and Collections are together under **Settings → Content**.
 
-iOS 0.4.24 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
+iOS 0.4.25 Beta uses the same four Add-ons destinations and Content layout. Compatible-settings sync is optional: leave it off for device-specific preferences. Sharing settings requires compatible app versions on the participating devices.
 
 Select a category, open a provider's setup page, and install its configured manifest when required.
 
 Catalogs, HTTP add-ons, collection layouts and script-provider repositories use different installation formats. Follow each entry's setup instructions.
+
+In **Choose Home Catalogs**, group rows by add-on and use **Show all / Hide all** for each group. New rows are marked **New** without changing your existing order. Preview before **Apply**, or cancel to keep your layout. Catalog presentation choices share only when settings sync is enabled.
 
 ## Restore your preferences
 
@@ -42,7 +44,7 @@ On the latest TV, Android and iOS beta apps, open **Settings → Restore default
 
 ## Updating
 
-On Android and TV, use the app's update checker or install the matching APK over your existing installation. Do not uninstall first. The app closes while the system applies an update.
+On Android and TV, use the app's update checker or install the matching APK over your existing installation. Do not uninstall first. The app closes while the system applies an update. On compatible older Android and Fire OS versions, **Reopen after update** is an optional setting. Other devices use **Open** in the system installer.
 
 On iOS, use your sideloading tool to sign and install updates. APKs do not work on iPhone.
 
