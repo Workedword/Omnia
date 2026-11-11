@@ -12,6 +12,12 @@
 
 Requires Android 7.0 or later on Android TV or an Android-based Fire TV device. Install the TV APK for browsing, library management, account profiles, compatible add-ons, and playback with your remote. Playback support depends on your device and media source.
 
+### Try the TV beta
+
+[Omnia TV 0.3.29 Beta](https://github.com/Workedword/Omnia/releases/tag/v0.3.29%2Btv) offers Streams, Omnia TV and OmniaTube as optional sections. Open TV Sources or TV settings directly from TV Home. Tube has a three-column video grid and opens its keyboard only when you choose Search. Switch section sits below Settings with matching navigation text.
+
+Select **Settings → About → Update channel → Beta** for in-app test updates. OmniaTube playback remains experimental and needs real-device feedback. Portal support, a full guide timeline and live add-on routing remain in development. These new sections are TV-only for now; the phone and iOS packages keep their existing interface. Stable TV updates remain on 0.3.27.
+
 ## Android
 
 Requires Android 7.0 or later. Install the Android APK for the phone and tablet interface, including browsing, library, account settings, compatible add-ons, and playback.

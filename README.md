@@ -99,7 +99,9 @@ Feature availability varies by platform, source, and account configuration. The 
 
 ## Try the new TV experience
 
-[**Omnia TV 0.3.28 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.28%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** into one red-accented cinema interface. Choose a section, then your profile. TV supports your M3U playlists or Xtream live-TV account, with optional XMLTV Now/Next, favorites and recent channels.
+[**Omnia TV 0.3.29 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.29%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** into one red-accented cinema interface. Choose a section, then your profile. TV supports your M3U playlists or Xtream live-TV account, with optional XMLTV Now/Next, favorites and recent channels.
+
+The new TV beta adds a remote-friendly video grid, deliberate Search activation, **Switch section** below Settings, and visible TV setup/settings shortcuts. To receive test releases inside Omnia, select **Settings → About → Update channel → Beta** and check for updates.
 
 This beta is for **Fire Stick / Android TV**. OmniaTube playback is experimental and needs device feedback; the new sections are not yet available in the phone or iOS packages. Install over your existing TV app to retain its data. Stable in-app updates continue to use TV **0.3.27**.
 
