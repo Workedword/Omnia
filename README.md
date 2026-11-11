@@ -97,6 +97,12 @@ Feature availability varies by platform, source, and account configuration. The 
 | **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
 | **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.27%2Btv/Omnia-TV-0.3.27.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bios/Omnia-iOS-0.4.25.ipa) |
 
+## Try the new TV experience
+
+[**Omnia TV 0.3.28 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.28%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** into one red-accented cinema interface. Choose a section, then your profile. TV supports your M3U playlists or Xtream live-TV account, with optional XMLTV Now/Next, favorites and recent channels.
+
+This beta is for **Fire Stick / Android TV**. OmniaTube playback is experimental and needs device feedback; the new sections are not yet available in the phone or iOS packages. Install over your existing TV app to retain its data. Stable in-app updates continue to use TV **0.3.27**.
+
 ## Get started
 
 1. **Choose your device.** Download the matching app above.
