@@ -7,10 +7,10 @@
 A cinema-inspired home for movies, shows, and your personal library.<br>
 Made for the big screen. Ready for your phone.
 
-[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.26%2Btv/Omnia-TV-0.3.26.apk)
+[![TV download](https://img.shields.io/badge/Fire_Stick_%2F_Android_TV-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.3.27%2Btv/Omnia-TV-0.3.27.apk)
 [![Android download](https://img.shields.io/badge/Android-Download-E50914?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25.apk)
 [![Discord](https://img.shields.io/badge/Discord-Join_Omnia_Streams-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/svMgchRA3f)
-[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24.ipa)
+[![iOS download](https://img.shields.io/badge/iOS_Beta-Download-333333?style=for-the-badge)](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bios/Omnia-iOS-0.4.25.ipa)
 
 [Discord](https://discord.gg/svMgchRA3f) · [Developers](#build-with-us) · [Contribute](CONTRIBUTING.md) · [Add-ons](addons/README.md) · [Features](#explore-omnia) · [Downloads](#choose-your-device) · [Get started](#get-started) · [Release notes](https://github.com/Workedword/Omnia/releases)
 
@@ -36,16 +36,20 @@ Made for the big screen. Ready for your phone.
 - Main cast names beneath director credits when supplied by the catalog.
 - Home catalog choices and Collections together under **Settings → Content** on TV, Android and the current iOS beta.
 - Configurable home rows and up to 12 hero catalog selections on Android and TV.
-- Search followed by inline Discover filters on TV.
+- Discover filters above Search, with keyboard activation left to you.
+- Group Home catalog rows by add-on, with **Show all**, **Hide all** and **New** markers.
+- Preview Home catalog changes before applying, or cancel to keep your layout.
 - Collections can hide their source rows from Home to avoid duplicates.
 - **Continue Watching** for titles in progress.
 
 ### 📚 Library & profiles
 
 - Save movies and shows to your library.
+- Open **Watched History** from Library.
 - Keep track of watched titles and playback progress.
 - Manage your Omnia account and profiles in one settings area.
 - Optional **Sync settings across devices**; keep it off for separate device preferences.
+- Account shows the last successful settings sync.
 - Sign in with your email and Omnia password. Create an account or reset your password from the sign-in screen.
 - Use the same Omnia account across your devices to keep your profiles and viewing progress together.
 
@@ -72,9 +76,12 @@ Made for the big screen. Ready for your phone.
 - Dark, spacious presentation with Omnia's red accents.
 - TV remote navigation and a separate mobile touch interface.
 - Appearance and home-screen customization.
+- A dedicated **Guide** links to your existing setup controls.
+- **Essentials / Advanced** settings views on mobile, with Advanced selected by default.
 - **Restore default settings** is available directly in Settings. Confirmation keeps account and media data intact.
 - In-app update checks on Android and TV, with separate platform downloads.
 - Bounded artwork/network caches and automatic cleanup of obsolete update installers on Android and TV.
+- Optional reopening after updates on compatible older Android and Fire OS versions.
 
 Feature availability varies by platform, source, and account configuration. The iPhone beta includes the mobile interface, account sign-in, updated settings and add-on sync. Cross-device settings sharing requires compatible app versions.
 
@@ -84,11 +91,11 @@ Feature availability varies by platform, source, and account configuration. The 
 
 | | Fire Stick / Android TV | Android | iPhone |
 | --- | --- | --- | --- |
-| **Version** | 0.3.26 | 0.4.25 | 0.4.24 · Beta |
+| **Version** | 0.3.27 | 0.4.25 | 0.4.25 · Beta |
 | **Designed for** | Your TV and remote | Phones and tablets | iPhone touch controls |
 | **Package** | TV APK | Android APK | IPA |
 | **Install** | Sideload the TV APK | Install the Android APK | Sign and sideload; iOS 16.1+ |
-| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.26%2Btv/Omnia-TV-0.3.26.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24.ipa) |
+| **Download** | [Get TV app](https://github.com/Workedword/Omnia/releases/download/v0.3.27%2Btv/Omnia-TV-0.3.27.apk) | [Get Android app](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25.apk) | [Get iOS beta](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bios/Omnia-iOS-0.4.25.ipa) |
 
 ## Get started
 
@@ -139,7 +146,7 @@ Omnia welcomes bug fixes, accessible interface improvements, translations, tests
 | Community add-ons | [`addons`](addons) | [Add-on directory](addons/README.md) |
 | Developer documentation | [`docs`](docs) | [Project structure](docs/PROJECT-STRUCTURE.md) |
 
-The source baseline is TV **0.3.26** and shared mobile **0.4.24**. The exact iOS release inputs and instructions are also available in the [iOS 0.4.24 source archive](https://github.com/Workedword/Omnia/releases/download/v0.4.24%2Bios/Omnia-iOS-0.4.24-source.zip). Each client keeps its own Gradle project and platform settings. The current Android 0.4.25 release includes its exact [corresponding source archive](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25-source.zip).
+The browseable client sources currently cover TV **0.3.26** and shared mobile **0.4.24**. Each current release also includes its exact corresponding source archive: [TV 0.3.27](https://github.com/Workedword/Omnia/releases/download/v0.3.27%2Btv/Omnia-TV-0.3.27-source.zip), [Android 0.4.25](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25-source.zip), and [iOS 0.4.25](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bios/Omnia-iOS-0.4.25-source.zip). Use the archive matching your release when building it.
 
 [Contributing](CONTRIBUTING.md) · [Security reports](SECURITY.md) · [Project structure](docs/PROJECT-STRUCTURE.md) · [License and notices](OMNIA-NOTICES.md)
 
