@@ -99,11 +99,15 @@ Feature availability varies by platform, source, and account configuration. The 
 
 ## Try the new TV experience
 
-[**Omnia TV 0.3.29 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.29%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** into one red-accented cinema interface. Choose a section, then your profile. TV supports your M3U playlists or Xtream live-TV account, with optional XMLTV Now/Next, favorites and recent channels.
+[**Omnia TV 0.3.30 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.30%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** into one red-accented cinema interface. Choose a section, then your profile.
 
-The new TV beta adds a remote-friendly video grid, deliberate Search activation, **Switch section** below Settings, and visible TV setup/settings shortcuts. To receive test releases inside Omnia, select **Settings → About → Update channel → Beta** and check for updates.
+- **Omnia TV:** set up a portal with a persistent virtual MAC, import a playlist URL or file, or connect an Xtream account. Browse categories, channels, favourites, recent channels and available XMLTV programme information.
+- **OmniaTube:** browse Home, Live, Music, Gaming, News and Sports in video shelves. Open channels and playlists, or choose Search when you want the keyboard.
+- **Built for the remote:** visible focus, deep-list scrolling, and separate TV source/settings controls. Switch section sits below Settings.
 
-This beta is for **Fire Stick / Android TV**. OmniaTube playback is experimental and needs device feedback; the new sections are not yet available in the phone or iOS packages. Install over your existing TV app to retain its data. Stable in-app updates continue to use TV **0.3.27**.
+Select **Settings → About → Update channel → Beta** and check for updates. Install over your existing TV app to retain its data. Stable TV updates remain on **0.3.27**.
+
+This beta is for **Fire Stick / Android TV**. Portal compatibility depends on your provider; OmniaTube is guest-only and needs playback feedback from normal devices and networks. A timeline guide, portal-supplied programme data and live add-on routing are not included yet. The phone and iOS apps retain their current interface.
 
 ## Get started
 
