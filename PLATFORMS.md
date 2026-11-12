@@ -14,13 +14,15 @@ Requires Android 7.0 or later on Android TV or an Android-based Fire TV device. 
 
 ### Try the TV beta
 
-[Omnia TV 0.3.30 Beta](https://github.com/Workedword/Omnia/releases/tag/v0.3.30%2Btv) offers Streams, Omnia TV and OmniaTube as optional sections.
+[Omnia TV 0.3.31 Beta](https://github.com/Workedword/Omnia/releases/tag/v0.3.31%2Btv) offers Streams, Omnia TV and OmniaTube as optional sections.
 
 **Omnia TV** supports portal setup with a persistent virtual MAC, playlist URLs/files and Xtream accounts. Give the displayed virtual MAC to your provider, save the portal, then choose Connect after activation. Use Categories, Channels, Guide, Favourites and Recent to browse your sources. XMLTV programme information is available when supplied.
 
 **OmniaTube** has video shelves for Home, Live, Music, Gaming, News and Sports, with channel and playlist browsing. Its keyboard opens only when you choose Search. Google account sign-in is not included.
 
-Select **Settings → About → Update channel → Beta** for in-app test updates. Portal compatibility depends on your provider, and Tube playback needs normal-device feedback. A timeline guide, portal-supplied programme data and live add-on routing remain in development. These sections are TV-only for now; the phone and iOS packages keep their current interface. Stable TV updates remain on 0.3.27.
+The 0.3.31 beta also supports larger portal channel lists without keeping the full provider response in memory.
+
+Select **Settings → About → Update channel → Beta** for in-app test updates. Portal compatibility depends on your provider, and Tube playback needs normal-device feedback. Provider movies, series, catch-up, a timeline guide, portal-supplied programme data and live add-on routing remain in development. These sections are TV-only for now; the phone and iOS packages keep their current interface. Stable TV updates remain on 0.3.27.
 
 ## Android
 
