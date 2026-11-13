@@ -99,17 +99,16 @@ Feature availability varies by platform, source, and account configuration. The 
 
 ## Try the new TV experience
 
-[**Omnia TV 0.3.32 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.32%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** into one red-accented cinema interface. Choose a section, then your profile.
+[**Omnia TV 0.3.33 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.33%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** together with refined TV layouts and consistent remote controls. Choose a section, then your profile.
 
-- **Omnia TV:** set up a portal with a persistent virtual MAC, import a playlist URL or file, or connect an Xtream account. Browse live channels, favourites, recent channels and available XMLTV programme information. Portal Movies and Series include provider categories, paged posters, seasons and episodes where supplied.
-- **OmniaTube:** browse Home, Live, Music, Gaming, News and Sports in video shelves. Open channels and playlists, or choose Search when you want the keyboard.
-- **Built for the remote:** visible focus, deep-list scrolling, and separate TV source/settings controls. Switch section sits below Settings.
-
-The 0.3.32 beta adds an IPTV setup Guide, deliberate search editing and remote access to Previous, Next and Channels during live playback. Large portal channel lists load incrementally while saved sources and the virtual MAC are retained.
+- **Streams:** movie and show discovery, title details, your library and configured playback sources.
+- **Omnia TV:** separate Sources, Guide and playback settings. Add a portal with a persistent virtual MAC, a playlist URL/file or an Xtream account. Browse provider channels, movies, series and episodes where supplied.
+- **OmniaTube:** native video search, channels, playlists, queue and library. Home and Live remain available; search opens only when selected.
+- **Built for the remote:** visible focus, compact catalog spacing and search traversal without an automatic keyboard.
 
 Select **Settings → About → Update channel → Beta** and check for updates. Install over your existing TV app to retain its data. Stable TV updates remain on **0.3.27**.
 
-This beta is for **Fire Stick / Android TV**. Portal compatibility depends on your provider; OmniaTube is guest-only and needs playback feedback from normal devices and networks. The full visual redesign is ongoing; compact poster labels can be clipped. Xtream currently supports live TV. Catch-up, a timeline guide, portal-supplied programme data, Tube account/library features and live add-on routing remain in development. The phone and iOS apps retain their current interface.
+This beta is for **Fire Stick / Android TV**. Provider compatibility and playback vary by service, device and network. Edited Streams search text can revert after scrolling away and returning. Full portal archive history and the hosted YouTube TV interface are not included. The phone and iOS apps retain their current interface.
 
 ## Get started
 
