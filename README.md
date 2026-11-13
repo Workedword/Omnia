@@ -149,23 +149,13 @@ Bring Omnia’s mobile interface to your iPhone with iOS 16.1 or later. Sign and
 
 </details>
 
-## Build with us
+## Community & credits
 
-Omnia welcomes bug fixes, accessible interface improvements, translations, tests and documentation. Start with the platform you use, then open a focused pull request.
+Bug reports, community add-on submissions and release feedback are welcome.
 
-| Area | Source | Start here |
-| --- | --- | --- |
-| Fire TV / Android TV | [`apps/tv`](apps/tv) | [TV build guide](docs/BUILD-TV.md) |
-| Android and iOS | [`apps/mobile`](apps/mobile) | [Mobile build guide](docs/BUILD-MOBILE.md) |
-| Community add-ons | [`addons`](addons) | [Add-on directory](addons/README.md) |
-| Developer documentation | [`docs`](docs) | [Project structure](docs/PROJECT-STRUCTURE.md) |
+Thank you to **NuvioMedia**, **Yurii Liskov / SmartTube**, the **Stremio community**, and the many IPTV and TV-interface projects that helped shape Omnia.
 
-The browseable client sources currently cover TV **0.3.26** and shared mobile **0.4.24**. Each current release also includes its exact corresponding source archive: [TV 0.3.27](https://github.com/Workedword/Omnia/releases/download/v0.3.27%2Btv/Omnia-TV-0.3.27-source.zip), [Android 0.4.25](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bandroid/Omnia-Mobile-0.4.25-source.zip), and [iOS 0.4.25](https://github.com/Workedword/Omnia/releases/download/v0.4.25%2Bios/Omnia-iOS-0.4.25-source.zip). Use the archive matching your release when building it.
-
-[Contributing](CONTRIBUTING.md) · [Security reports](SECURITY.md) · [Project structure](docs/PROJECT-STRUCTURE.md) · [License and notices](OMNIA-NOTICES.md)
-
-Download a release to use Omnia, or clone this repository to help develop it. Account and Discord services are operated separately; production access is not needed to contribute to the clients.
-
+[Credits & thanks](CREDITS.md) · [Community add-ons](addons/README.md) · [Security reports](SECURITY.md) · [Source and notices](OMNIA-NOTICES.md)
 
 ## Contact
 
