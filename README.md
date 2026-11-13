@@ -99,16 +99,16 @@ Feature availability varies by platform, source, and account configuration. The 
 
 ## Try the new TV experience
 
-[**Omnia TV 0.3.33 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.33%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** together with refined TV layouts and consistent remote controls. Choose a section, then your profile.
+[**Omnia TV 0.3.34 Beta**](https://github.com/Workedword/Omnia/releases/tag/v0.3.34%2Btv) brings **Streams**, **Omnia TV** and **OmniaTube** together with direct section switching and a cleaner remote interface.
 
-- **Streams:** movie and show discovery, title details, your library and configured playback sources.
-- **Omnia TV:** separate Sources, Guide and playback settings. Add a portal with a persistent virtual MAC, a playlist URL/file or an Xtream account. Browse provider channels, movies, series and episodes where supplied.
-- **OmniaTube:** native video search, channels, playlists, queue and library. Home and Live remain available; search opens only when selected.
-- **Built for the remote:** visible focus, compact catalog spacing and search traversal without an automatic keyboard.
+- **Streams:** compact catalog, add-on, Discover and Library controls; shared Day/Night appearance; watched-history clearing that retains unfinished Continue Watching.
+- **Omnia TV:** Live TV and Guide in one destination, retained video preview/fullscreen, poster-grid or compact-list libraries, channel organization and source guide controls. Portal/vMAC, playlists and Xtream remain supported.
+- **OmniaTube:** Home and Search together, compact native player menus, remembered quality, queue controls and optional SponsorBlock, DeArrow and muted previews.
+- **Provider replay:** browse available portal archive dates and return to live. Rewind uses the player's available live window or cache.
 
 Select **Settings → About → Update channel → Beta** and check for updates. Install over your existing TV app to retain its data. Stable TV updates remain on **0.3.27**.
 
-This beta is for **Fire Stick / Android TV**. Provider compatibility and playback vary by service, device and network. Edited Streams search text can revert after scrolling away and returning. Full portal archive history and the hosted YouTube TV interface are not included. The phone and iOS apps retain their current interface.
+This beta is for **Fire Stick / Android TV**. Provider compatibility, Series, guide and replay availability vary by subscription, device and network. Optional external video-account sign-in is not included. The phone and iOS apps retain their current releases.
 
 ## Get started
 
